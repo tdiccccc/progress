@@ -6,7 +6,7 @@
 
 ## サイト概要
 
-業務の進捗を可視化することで、作業の遅延の解消や問題早期発見を可能にします
+業務の進捗を可視化することで、作業の遅延の解消や問題早期発見を可能にします。
 
 ## テーマを選んだ理由
 
@@ -29,37 +29,14 @@
 
 ## 使用技術
 
-devise
-Ajax
-kaminari
-chart.js
-bootstrap
+- devise
+- Ajax
+- kaminari
+- chart.js
+- bootstrap
 
 ## 環境
 
-AWS cloud9
-Ruby 2.6.3
-Ruby on Rails(6.1.5)
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- AWS cloud9
+- Ruby 2.6.3
+- Ruby on Rails(6.1.5)
