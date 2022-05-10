@@ -40,3 +40,484 @@ Migrating to CreateProgresses (20220509055321)
   [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com
+Started GET "/" for 122.223.5.191 at 2022-05-10 06:58:26 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.7ms | Allocations: 350)
+Completed 200 OK in 25ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 3413)
+
+
+Started GET "/" for 122.223.5.191 at 2022-05-10 06:58:28 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.0ms | Allocations: 229)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 878)
+
+
+Started GET "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:27:06 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.8ms | Allocations: 170)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 26.1ms | Allocations: 9519)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.18
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+warning ../../package.json: No license field
+warning ../../package.json: No license field
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 1245.7ms | Allocations: 38621)
+Completed 500 Internal Server Error in 1276ms (ActiveRecord: 0.3ms | Allocations: 47582)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/ec2-user/environment/progress/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12:   
+    13:   <hearder>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:37:18 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1322)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 7641)
+Completed 500 Internal Server Error in 12ms (Allocations: 8310)
+
+
+  
+ActionView::Template::Error (Missing partial admin/sessions/_header, devise/sessions/_header, devise/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/ec2-user/environment/progress/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/kaminari-core-1.2.2/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.1/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actiontext-6.1.5.1/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionmailbox-6.1.5.1/app/views"
+):
+    11:   </head>
+    12:   
+    13:   <hearder>
+    14:     <%= render 'header'%>
+    15:   </hearder>
+    16:   <body>
+    17:     <%= yield %>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:38:09 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.9ms | Allocations: 156)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1758)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 6848)
+Completed 500 Internal Server Error in 14ms (Allocations: 9166)
+
+
+  
+ActionView::Template::Error (Missing partial lauouts/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/ec2-user/environment/progress/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/kaminari-core-1.2.2/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.1/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actiontext-6.1.5.1/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionmailbox-6.1.5.1/app/views"
+):
+    11:   </head>
+    12:   
+    13:   <hearder>
+    14:     <%= render 'lauouts/header' %>
+    15:   </hearder>
+    16:   <body>
+    17:     <%= yield %>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:39:01 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 3.7ms | Allocations: 156)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 33.9ms | Allocations: 1758)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 36.6ms | Allocations: 4887)
+  Rendered layout layouts/application.html.erb (Duration: 105.2ms | Allocations: 10549)
+Completed 500 Internal Server Error in 177ms (Allocations: 12856)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_customer_registration_path' for #<ActionView::Base:0x00000003641178>
+Did you mean?  new_worker_registration_path):
+    71:               <% end %>
+    72:             </li>
+    73:             <li class="nav-item">
+    74:               <%= link_to new_customer_registration_path, class: "nav-link text-light btn btn-primary mr-1 mb-1" do %>
+    75:                 <i class="fas fa-user-plus"></i> 新規登録
+    76:               <% end %>
+    77:             </li>
+  
+app/views/layouts/_header.html.erb:74
+app/views/layouts/application.html.erb:14
+Started GET "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:40:10 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.3ms | Allocations: 156)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1758)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 1195)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6856)
+Completed 200 OK in 14ms (Views: 13.6ms | Allocations: 9193)
+
+
+Started GET "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:45:20 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.7ms | Allocations: 156)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1749)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ec2-user/environment/progress/public/packs
+[Webpacker] warning ../../package.json: No license field
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+302 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 302:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2) or calc($input-padding-y / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+498 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 498:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($custom-control-indicator-size, 2) or calc($custom-control-indicator-size / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+568 │ $custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;
+    │                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 568:49  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+713 │ $nav-divider-margin-y:              $spacer / 2 !default;
+    │                                     ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 713:37  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+718 │ $navbar-padding-y:                  $spacer / 2 !default;
+    │                                     ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 718:37  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+WARNING: 67 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: 87135d69db492c56ac72
+Version: webpack 4.46.0
+Time: 18491ms
+Built at: 05/10/2022 7:45:41 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e044d68441ac40b09e57.js   3.29 MiB  application  [emitted] [immutable]  application
+js/application-e044d68441ac40b09e57.js.map   3.48 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e044d68441ac40b09e57.js js/application-e044d68441ac40b09e57.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 633 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 1.01 MiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 863 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 119 hidden modules
+
+  Rendered layouts/_header.html.erb (Duration: 1.8ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 20856.4ms | Allocations: 6510)
+Completed 200 OK in 20861ms (Views: 20859.8ms | Allocations: 8886)
+
+
+Started GET "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:47:04 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.8ms | Allocations: 156)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 1194)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 5205)
+Completed 200 OK in 14ms (Views: 13.1ms | Allocations: 7557)
+
+
+Started GET "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:49:45 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.3ms | Allocations: 156)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1435)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4897)
+Completed 200 OK in 13ms (Views: 11.6ms | Allocations: 7249)
+
+
+Started GET "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:50:50 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.3ms | Allocations: 156)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1425)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4884)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 7236)
+
+
+Started GET "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:51:23 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.3ms | Allocations: 156)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1429)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4889)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 7262)
+
+
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdmin Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "test@test"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started POST "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:55:16 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"test@test", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "test@test"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.6ms | Allocations: 7548)
+
+
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"test@test", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 945)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 243)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3084)
+Completed 200 OK in 309ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4172)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdmin Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "test@test"], ["LIMIT", 1]]
+  [1m[36mAdmin Create (6.5ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test@test"], ["encrypted_password", "$2a$12$b2D3P3APLcjB1L0HnYtlk.xPR7HBG9rlN/Lifc5EEMb3F5c1ifqR."], ["created_at", "2022-05-10 07:55:44.024752"], ["updated_at", "2022-05-10 07:55:44.024752"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/admin/sign_in" for 122.223.5.191 at 2022-05-10 07:55:51 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin"=>{"email"=>"test@test", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "test@test"], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 307ms (ActiveRecord: 0.1ms | Allocations: 3998)
+
+
+Started GET "/" for 122.223.5.191 at 2022-05-10 07:55:51 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.6ms | Allocations: 233)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 1001)
+
+
+Started GET "/admin/progresses" for 122.223.5.191 at 2022-05-10 08:16:57 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant Admin (call 'Admin.connection' to establish a connection)::ProgressesController
+Did you mean?  Admin::ProgressController):
+  
+Started GET "/admin/progresses" for 122.223.5.191 at 2022-05-10 08:17:07 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant Admin (call 'Admin.connection' to establish a connection)::ProgressesController
+Did you mean?  Admin::ProgressController):
+  
+Started GET "/admin/progresses" for 122.223.5.191 at 2022-05-10 08:18:26 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/progresses/index.html.erb within layouts/application
+  Rendered admin/progresses/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/layouts/_header.html.erb:9
+  [1m[36mAdmin Load (1.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 14.4ms | Allocations: 6897)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 9227)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 1.5ms | Allocations: 10598)
+
+
+Started GET "/admin/progresses" for 122.223.5.191 at 2022-05-10 08:18:31 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/progresses/index.html.erb within layouts/application
+  Rendered admin/progresses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 3.1ms | Allocations: 1197)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3139)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 3538)
+
+
+Started GET "/admin/products" for 122.223.5.191 at 2022-05-10 08:18:32 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/products/index.html.erb within layouts/application
+  Rendered admin/products/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 304)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2327)
+Completed 200 OK in 12ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 5146)
+
+
+Started GET "/admin/genres" for 122.223.5.191 at 2022-05-10 08:18:34 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/index.html.erb within layouts/application
+  Rendered admin/genres/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 11.9ms | Allocations: 1196)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3219)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.1ms | Allocations: 4319)
+
+
+Started GET "/admin/workers" for 122.223.5.191 at 2022-05-10 08:18:38 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::WorkersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/workers/index.html.erb within layouts/application
+  Rendered admin/workers/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 1207)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3235)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 4334)
+
+
+Started GET "/admin/progresses" for 122.223.5.191 at 2022-05-10 08:18:40 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/progresses/index.html.erb within layouts/application
+  Rendered admin/progresses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 1197)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3140)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 3539)
+
+
+Started GET "/admin/products" for 122.223.5.191 at 2022-05-10 08:18:44 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/products/index.html.erb within layouts/application
+  Rendered admin/products/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 304)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2246)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 3746)
+
+
