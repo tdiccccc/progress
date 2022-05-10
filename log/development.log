@@ -521,3 +521,162 @@ Processing by Admin::ProductsController#index as HTML
 Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 3746)
 
 
+Started GET "/admin/products" for 122.223.5.191 at 2022-05-10 08:39:13 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProductsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/products/index.html.erb within layouts/application
+  Rendered admin/products/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 1230)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3571)
+Completed 200 OK in 22ms (Views: 9.7ms | ActiveRecord: 0.5ms | Allocations: 11504)
+
+
+Started GET "/admin/genres" for 122.223.5.191 at 2022-05-10 08:39:17 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:25
+  Rendered admin/genres/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1648)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 3.1ms | Allocations: 1186)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4735)
+Completed 200 OK in 20ms (Views: 13.6ms | ActiveRecord: 1.4ms | Allocations: 8184)
+
+
+Started GET "/admin/genres" for 122.223.5.191 at 2022-05-10 08:43:42 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/admin/genres_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:25
+  Rendered admin/genres/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1294)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 8.6ms | Allocations: 5388)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 8562)
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 1.6ms | Allocations: 12250)
+
+
+Started POST "/admin/genres" for 122.223.5.191 at 2022-05-10 08:44:14 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "genre"=>{"name"=>"チラシ"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/admin/genres_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:9:in `create'
+  [1m[36mGenre Create (3.4ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "チラシ"], ["created_at", "2022-05-10 08:44:14.474645"], ["updated_at", "2022-05-10 08:44:14.474645"]]
+  ↳ app/controllers/admin/genres_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:9:in `create'
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/genres
+Completed 302 Found in 31ms (ActiveRecord: 9.4ms | Allocations: 7654)
+
+
+Started GET "/admin/genres" for 122.223.5.191 at 2022-05-10 08:44:14 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:25
+  Rendered admin/genres/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 8.7ms | Allocations: 5387)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 8645)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.8ms | Allocations: 9219)
+
+
+Started GET "/admin/genres/1/edit" for 122.223.5.191 at 2022-05-10 08:44:16 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:18:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 2.8ms | Allocations: 1194)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3222)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 4408)
+
+
+Started GET "/admin/genres/1/edit" for 122.223.5.191 at 2022-05-10 08:44:48 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:18:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 854)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 4.1ms | Allocations: 2108)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 5202)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.2ms | Allocations: 7081)
+
+
+Started PATCH "/admin/genres/1" for 122.223.5.191 at 2022-05-10 08:45:06 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "genre"=>{"name"=>"無線綴じ"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:23:in `update'
+  [1m[36mGenre Update (1.7ms)[0m  [1m[33mUPDATE "genres" SET "name" = ?, "updated_at" = ? WHERE "genres"."id" = ?[0m  [["name", "無線綴じ"], ["updated_at", "2022-05-10 08:45:06.715101"], ["id", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/genres_controller.rb:23:in `update'
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/genres
+Completed 302 Found in 16ms (ActiveRecord: 6.4ms | Allocations: 5036)
+
+
+Started GET "/admin/genres" for 122.223.5.191 at 2022-05-10 08:45:06 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:25
+  Rendered admin/genres/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1569)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 2.9ms | Allocations: 1185)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4655)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 5208)
+
+
+Started GET "/admin/products" for 122.223.5.191 at 2022-05-10 08:45:29 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/products/index.html.erb within layouts/application
+  Rendered admin/products/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 304)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2289)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 5094)
+
+
