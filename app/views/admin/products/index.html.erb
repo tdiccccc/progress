@@ -19,6 +19,7 @@
             <th>商品名</th>
             <th>数量</th>
             <th>納期</th>
+            <th></th>
           </tr>
         </thead>
         <% @products.each do |product| %>
@@ -30,6 +31,9 @@
             </td>
             <td><%= product.product_count.to_s(:delimited) %></td>
             <td><%= product.delivery_date %></td>
+            <td>
+              <%= link_to '編集する', edit_admin_product_path(product.id), class: "btn btn-success" %>
+            </td>
           </tr>
         </tbody>
         <% end %>

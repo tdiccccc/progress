@@ -7,7 +7,7 @@ class Admin::ProductsController < ApplicationController
   end
 
   def create
-    @product = Product.new(product_params)
+    @product = Product.new(products_params)
     if @product.save
       redirect_to products_path#, notice: "商品 #{@product.genre.name} を登録しました。"
     else
@@ -20,14 +20,23 @@ class Admin::ProductsController < ApplicationController
   end
 
   def show
+    @product = Product.find(params[:id])
   end
 
   def edit
+    @product = Product.find(params[:id])
+    @genres = Genre.all
+  end
+
+  def update
+    @product = Product.find(params[:id])
+    @product.update(products_params)
+    redirect_to admin_product_path
   end
 
   private
 
-  def product_params
+  def products_params
     params.require(:product).permit(:genre_id, :delivery_date, :product_count)
   end
 end
