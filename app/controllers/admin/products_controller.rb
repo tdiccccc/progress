@@ -9,13 +9,14 @@ class Admin::ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      redirect_to products_path, notice: "商品 #{@product.genre.name} を登録しました。"
+      redirect_to products_path#, notice: "商品 #{@product.genre.name} を登録しました。"
     else
       render :new
     end
   end
 
   def index
+    @products = Product.all
   end
 
   def show
