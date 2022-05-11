@@ -2373,3 +2373,2179 @@ Processing by Admin::ProductsController#index as HTML
 Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.4ms | Allocations: 8778)
 
 
+Started GET "/admin/products" for 49.98.68.100 at 2022-05-11 05:28:57 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admin/products/index.html.erb:25
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  Rendered admin/products/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 5395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 1220)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 8855)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.4ms | Allocations: 11300)
+
+
+Started GET "/admin/progresses" for 49.98.68.100 at 2022-05-11 05:29:53 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/progresses/index.html.erb within layouts/application
+  Rendered admin/progresses/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 3.4ms | Allocations: 1194)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3177)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.1ms | Allocations: 4312)
+
+
+Started GET "/admin/products" for 49.98.68.100 at 2022-05-11 05:29:55 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admin/products/index.html.erb:25
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  Rendered admin/products/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 5084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 7283)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.4ms | Allocations: 8795)
+
+
+Started GET "/admin/products/new" for 49.98.68.100 at 2022-05-11 05:29:57 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProductsController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/products/new.html.erb:10
+  Rendered admin/products/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5411)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 7068)
+
+
+Started GET "/admin/genres" for 49.98.68.100 at 2022-05-11 05:29:59 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/index.html.erb within layouts/application
+  Rendered admin/genres/_form.html.erb (Duration: 4.2ms | Allocations: 1020)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/_index.html.erb:8
+  Rendered admin/genres/_index.html.erb (Duration: 3.1ms | Allocations: 1002)
+  Rendered admin/genres/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2558)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 4756)
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.2ms | Allocations: 7033)
+
+
+Started GET "/admin/workers" for 49.98.68.100 at 2022-05-11 05:30:04 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::WorkersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/workers/index.html.erb within layouts/application
+  Rendered admin/workers/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:9
+  Rendered layouts/_header.html.erb (Duration: 3.3ms | Allocations: 1197)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4155)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 5276)
+
+
+Started GET "/admin/genres" for 49.98.68.100 at 2022-05-11 05:30:05 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/index.html.erb within layouts/application
+  Rendered admin/genres/_form.html.erb (Duration: 1.5ms | Allocations: 597)
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/_index.html.erb:8
+  Rendered admin/genres/_index.html.erb (Duration: 2.2ms | Allocations: 817)
+  Rendered admin/genres/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1563)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 294)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3758)
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 0.2ms | Allocations: 5287)
+
+
+Started GET "/admin/products" for 49.98.68.100 at 2022-05-11 05:30:06 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admin/products/index.html.erb:25
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  Rendered admin/products/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 6040)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 8239)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.6ms | Allocations: 9751)
+
+
+Started DELETE "/admin/sign_out" for 49.98.68.100 at 2022-05-11 05:31:08 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/sign_in
+Completed 302 Found in 7ms (ActiveRecord: 0.1ms | Allocations: 2475)
+
+
+Started GET "/admin/sign_in" for 49.98.68.100 at 2022-05-11 05:31:09 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.9ms | Allocations: 168)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3963)
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 6273)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-11 05:31:16 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 307)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2330)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 3395)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:31:21 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant Workers):
+  
+Started GET "/products" for 49.98.68.100 at 2022-05-11 05:32:48 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 298)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2237)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2631)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:32:51 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant Workers):
+  
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:36:24 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 1.0ms | Allocations: 322)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2283)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4461)
+Completed 200 OK in 23ms (Views: 12.8ms | ActiveRecord: 0.8ms | Allocations: 12780)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:38:43 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.5ms | Allocations: 274)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1543)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 5003)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 7381)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:39:58 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.5ms | Allocations: 287)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1555)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5014)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 7378)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:41:33 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.5ms | Allocations: 287)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1577)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5036)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 7402)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:42:08 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.5ms | Allocations: 287)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1569)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 5028)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 7392)
+
+
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 05:43:42 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/registrations/new.html.erb within layouts/application
+  Rendered worker/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 237)
+  Rendered worker/shared/_links.html.erb (Duration: 0.6ms | Allocations: 318)
+  Rendered worker/registrations/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2412)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 5832)
+Completed 200 OK in 16ms (Views: 15.0ms | Allocations: 8237)
+
+
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 05:44:41 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/registrations/new.html.erb within layouts/application
+  Rendered worker/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 230)
+  Rendered worker/shared/_links.html.erb (Duration: 0.5ms | Allocations: 271)
+  Rendered worker/registrations/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5734)
+Completed 200 OK in 14ms (Views: 13.3ms | Allocations: 8021)
+
+
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 05:44:53 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/registrations/new.html.erb within layouts/application
+  Rendered worker/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered worker/shared/_links.html.erb (Duration: 0.2ms | Allocations: 104)
+  Rendered worker/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1324)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3518)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 4070)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:44:56 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 274)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3462)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 5178)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:47:16 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1550)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 5022)
+Completed 200 OK in 13ms (Views: 12.1ms | Allocations: 7385)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:47:49 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5027)
+Completed 200 OK in 13ms (Views: 12.2ms | Allocations: 7411)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 05:58:07 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1550)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 5022)
+Completed 200 OK in 20ms (Views: 19.6ms | Allocations: 7385)
+
+
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 05:58:10 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/registrations/new.html.erb within layouts/application
+  Rendered worker/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 230)
+  Rendered worker/shared/_links.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered worker/registrations/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3960)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4030)
+Completed 500 Internal Server Error in 10ms (Allocations: 5646)
+
+
+  
+ActionView::Template::Error (Missing partial customer/shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/ec2-user/environment/progress/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/kaminari-core-1.2.2/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.1/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actiontext-6.1.5.1/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionmailbox-6.1.5.1/app/views"
+):
+    31:     <h3 class="my-5 bg-light">新規会員登録</h3>
+    32:   </div>
+    33:   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    34:     <%= render "customer/shared/error_messages", resource: resource %>
+    35:     
+    36:     <div class="field row mb-3">
+    37:       <div class="col-3"><%= f.label :name, "名前" %></div>
+  
+app/views/worker/registrations/new.html.erb:34
+app/views/worker/registrations/new.html.erb:33
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 05:59:16 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/registrations/new.html.erb within layouts/application
+  Rendered worker/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 230)
+  Rendered worker/shared/_links.html.erb (Duration: 0.5ms | Allocations: 268)
+  Rendered worker/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered worker/registrations/new.html.erb within layouts/application (Duration: 13.3ms | Allocations: 6245)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 6315)
+Completed 500 Internal Server Error in 18ms (Allocations: 8596)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for #<Worker:0x00000000051fd790>
+Did you mean?  farst_name
+               farst_name?
+               farst_name=):
+    39:         <%= f.label :last_name, "(姓)", class: "pr-2" %>
+    40:         <%= f.text_field :last_name, autofocus: true, class: "form-control mr-2" %>
+    41:         <%= f.label :first_name, "(名)", class: "pr-2" %>
+    42:         <%= f.text_field :first_name, class: "form-control mr-2" %>
+    43:       </div>
+    44:     </div>
+    45:   
+  
+app/views/worker/registrations/new.html.erb:42
+app/views/worker/registrations/new.html.erb:33
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateWorkers (20220511061255)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "last_name" varchar NOT NULL, "first_name" varchar NOT NULL, "is_deleted" boolean DEFAULT 0 NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.0ms)[0m  [1m[35mDROP TABLE "progresses"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (3.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGenres (20220509055045)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.9ms)[0m  [1m[35mDROP TABLE "genres"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509055045"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20220509054633)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.7ms)[0m  [1m[35mDROP TABLE "products"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509054633"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateAdmins (20220509045844)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.2ms)[0m  [1m[35mDROP INDEX "index_admins_on_reset_password_token"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP INDEX "index_admins_on_email"[0m
+  [1m[35m (3.0ms)[0m  [1m[35mDROP TABLE "admins"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (3.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509045844"]]
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Hoge (20220509044635)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (4.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509044635"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateAdmins (20220509045844)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509045844"]]
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20220509054633)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "genre_id" integer NOT NULL, "delivery_date" date NOT NULL, "product_count" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509054633"]]
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGenres (20220509055045)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "genres" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055045"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "progresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "worker_id" integer NOT NULL, "product_id" integer NOT NULL, "progress_status" integer DEFAULT 0 NOT NULL, "begin_time" datetime NOT NULL, "end_time" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateWorkers (20220511061255)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "last_name" varchar NOT NULL, "first_name" varchar NOT NULL, "is_deleted" boolean DEFAULT 0 NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.8ms)[0m  [1m[35mDROP TABLE "progresses"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGenres (20220509055045)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.9ms)[0m  [1m[35mDROP TABLE "genres"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509055045"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20220509054633)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.4ms)[0m  [1m[35mDROP TABLE "products"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509054633"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateAdmins (20220509045844)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.8ms)[0m  [1m[35mDROP INDEX "index_admins_on_reset_password_token"[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP INDEX "index_admins_on_email"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "admins"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (3.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509045844"]]
+  [1m[36mTRANSACTION (10.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "workers"[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "last_name" varchar NOT NULL, "farst_name" varchar NOT NULL, "is_deleted" boolean DEFAULT 0 NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_email" ON "workers" ("email")[0m
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_reset_password_token" ON "workers" ("reset_password_token")[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-05-11 06:35:59.866683"], ["updated_at", "2022-05-11 06:35:59.866683"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "c9f6ceee4c14c6899ea6786041c61cc6c5980089"], ["created_at", "2022-05-11 06:35:59.884740"], ["updated_at", "2022-05-11 06:35:59.884740"]]
+  [1m[36mTRANSACTION (10.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "workers"[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "last_name" varchar NOT NULL, "farst_name" varchar NOT NULL, "is_deleted" boolean DEFAULT 0 NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_email" ON "workers" ("email")[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_reset_password_token" ON "workers" ("reset_password_token")[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-05-11 06:35:59.944975"], ["updated_at", "2022-05-11 06:35:59.944975"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (2.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2022-05-11 06:35:59.958089"], ["key", "environment"]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "c9f6ceee4c14c6899ea6786041c61cc6c5980089"], ["created_at", "2022-05-11 06:35:59.972187"], ["updated_at", "2022-05-11 06:35:59.972187"]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateAdmins (20220509045844)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509045844"]]
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20220509054633)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "genre_id" integer NOT NULL, "delivery_date" date NOT NULL, "product_count" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (7.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509054633"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGenres (20220509055045)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "genres" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055045"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "progresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "worker_id" integer NOT NULL, "product_id" integer NOT NULL, "progress_status" integer DEFAULT 0 NOT NULL, "begin_time" datetime NOT NULL, "end_time" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Hoge (0)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Hoge (0)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (4.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "0"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateWorkers (20220511064308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "last_name" varchar NOT NULL, "farst_name" varchar NOT NULL, "is_deleted" boolean DEFAULT 0 NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateWorkers (20220511064308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.1ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_email" ON "workers" ("email")[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.7ms)[0m  [1m[35mDROP TABLE "progresses"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGenres (20220509055045)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.4ms)[0m  [1m[35mDROP TABLE "genres"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509055045"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20220509054633)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mDROP TABLE "products"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509054633"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateAdmins (20220509045844)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.2ms)[0m  [1m[35mDROP INDEX "index_admins_on_reset_password_token"[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP INDEX "index_admins_on_email"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "admins"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509045844"]]
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateAdmins (20220509045844)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509045844"]]
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20220509054633)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "genre_id" integer NOT NULL, "delivery_date" date NOT NULL, "product_count" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509054633"]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGenres (20220509055045)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "genres" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055045"]]
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "progresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "worker_id" integer NOT NULL, "product_id" integer NOT NULL, "progress_status" integer DEFAULT 0 NOT NULL, "begin_time" datetime NOT NULL, "end_time" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateWorkers (20220511064308)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (8.1ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_email" ON "workers" ("email")[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateWorkers (20220511070008)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.1ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_email" ON "workers" ("email")[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateWorkers (20220511070008)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.5ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_email" ON "workers" ("email")[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateAdmins (20220509045844)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509045844"]]
+  [1m[36mTRANSACTION (8.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20220509054633)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "genre_id" integer NOT NULL, "delivery_date" date NOT NULL, "product_count" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509054633"]]
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGenres (20220509055045)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "genres" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055045"]]
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "progresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "worker_id" integer NOT NULL, "product_id" integer NOT NULL, "progress_status" integer DEFAULT 0 NOT NULL, "begin_time" datetime NOT NULL, "end_time" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateWorkers (20220511070008)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-05-11 08:03:42.300532"], ["updated_at", "2022-05-11 08:03:42.300532"]]
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkers (20220511080521)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220511080521"]]
+  [1m[36mTRANSACTION (8.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddDeviseToWorkers (20220511080545)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aworkers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aworkers" ("id","created_at","updated_at")
+                     SELECT "id","created_at","updated_at" FROM "workers"[0m
+  [1m[35m (4.3ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "last_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "workers" ("id","created_at","updated_at")
+                     SELECT "id","created_at","updated_at" FROM "aworkers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aworkers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aworkers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "last_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aworkers" ("id","created_at","updated_at","last_name")
+                     SELECT "id","created_at","updated_at","last_name" FROM "workers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "last_name" varchar NOT NULL, "farst_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "workers" ("id","created_at","updated_at","last_name")
+                     SELECT "id","created_at","updated_at","last_name" FROM "aworkers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aworkers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "workers" ADD "is_deleted" boolean DEFAULT 0 NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "workers" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "encrypted_password" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "reset_password_token" varchar[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "reset_password_sent_at" datetime[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "workers" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_email" ON "workers" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_reset_password_token" ON "workers" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220511080545"]]
+  [1m[36mTRANSACTION (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToWorkers (20220511080545)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToWorkers (20220511080545)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateAdmins (20220509045844)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509045844"]]
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20220509054633)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "genre_id" integer NOT NULL, "delivery_date" date NOT NULL, "product_count" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509054633"]]
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGenres (20220509055045)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "genres" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055045"]]
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "progresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "worker_id" integer NOT NULL, "product_id" integer NOT NULL, "progress_status" integer DEFAULT 0 NOT NULL, "begin_time" datetime NOT NULL, "end_time" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateWorkers (20220511080521)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220511080521"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddDeviseToWorkers (20220511080545)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aworkers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aworkers" ("id","created_at","updated_at")
+                     SELECT "id","created_at","updated_at" FROM "workers"[0m
+  [1m[35m (4.0ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "last_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "workers" ("id","created_at","updated_at")
+                     SELECT "id","created_at","updated_at" FROM "aworkers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aworkers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aworkers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "last_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aworkers" ("id","created_at","updated_at","last_name")
+                     SELECT "id","created_at","updated_at","last_name" FROM "workers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "last_name" varchar NOT NULL, "farst_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "workers" ("id","created_at","updated_at","last_name")
+                     SELECT "id","created_at","updated_at","last_name" FROM "aworkers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aworkers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "is_deleted" boolean DEFAULT 0 NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "workers" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "encrypted_password" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "reset_password_token" varchar[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "reset_password_sent_at" datetime[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_email" ON "workers" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_reset_password_token" ON "workers" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220511080545"]]
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (5.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-05-11 08:15:06.523939"], ["updated_at", "2022-05-11 08:15:06.523939"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToWorkers (20220511080545)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToWorkers (20220511080545)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Hoge (20220511080545)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (3.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220511080545"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkers (20220511080521)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.5ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220511080521"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateAdmins (20220509045844)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509045844"]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20220509054633)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "genre_id" integer NOT NULL, "delivery_date" date NOT NULL, "product_count" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509054633"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGenres (20220509055045)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "genres" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055045"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "progresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "worker_id" integer NOT NULL, "product_id" integer NOT NULL, "progress_status" integer DEFAULT 0 NOT NULL, "begin_time" datetime NOT NULL, "end_time" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-05-11 08:42:38.082876"], ["updated_at", "2022-05-11 08:42:38.082876"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.3ms)[0m  [1m[35mDROP TABLE "progresses"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProgresses (20220509055321)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "progresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "worker_id" integer NOT NULL, "product_id" integer NOT NULL, "progress_status" integer DEFAULT 0 NOT NULL, "begin_time" datetime NOT NULL, "end_time" datetime NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220509055321"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkers (20220511084618)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220511084618"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddDeviseToWorkers (20220511084637)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aworkers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aworkers" ("id","created_at","updated_at")
+                     SELECT "id","created_at","updated_at" FROM "workers"[0m
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "last_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "workers" ("id","created_at","updated_at")
+                     SELECT "id","created_at","updated_at" FROM "aworkers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aworkers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aworkers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "last_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aworkers" ("id","created_at","updated_at","last_name")
+                     SELECT "id","created_at","updated_at","last_name" FROM "workers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "workers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "workers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "last_name" varchar NOT NULL, "first_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "workers" ("id","created_at","updated_at","last_name")
+                     SELECT "id","created_at","updated_at","last_name" FROM "aworkers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aworkers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "workers" ADD "is_deleted" boolean DEFAULT 0 NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "encrypted_password" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "reset_password_token" varchar[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "reset_password_sent_at" datetime[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "workers" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_email" ON "workers" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workers_on_reset_password_token" ON "workers" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220511084637"]]
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 08:49:17 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/worker/sign_up"):
+  
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 08:49:41 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ArgumentError (Invalid route name, already in use: 'new_worker_session' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+https://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:16:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 08:50:08 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering worker/registrations/new.html.erb within layouts/application
+  Rendered worker/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 238)
+  Rendered worker/shared/_links.html.erb (Duration: 0.6ms | Allocations: 318)
+  Rendered worker/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered worker/shared/_links.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered worker/registrations/new.html.erb within layouts/application (Duration: 19.3ms | Allocations: 7006)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 1235)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 10542)
+Completed 200 OK in 59ms (Views: 37.3ms | ActiveRecord: 1.0ms | Allocations: 21870)
+
+
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 08:51:19 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/registrations/new.html.erb within layouts/application
+  Rendered worker/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 230)
+  Rendered worker/shared/_links.html.erb (Duration: 0.5ms | Allocations: 268)
+  Rendered worker/registrations/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5833)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 8148)
+
+
+Started POST "/worker" for 49.98.68.100 at 2022-05-11 08:51:50 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "worker"=>{"last_name"=>"山田", "first_name"=>"太郎", "email"=>"a@a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+[31mUnpermitted parameters: :last_name, :first_name[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "workers" WHERE "workers"."email" = ? LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+  [1m[36mWorker Create (0.5ms)[0m  [1m[32mINSERT INTO "workers" ("created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?)[0m  [["created_at", "2022-05-11 08:51:50.844089"], ["updated_at", "2022-05-11 08:51:50.844089"], ["email", "a@a"], ["encrypted_password", "$2a$12$IZrNioJ1HsUDz.AEO6gCj.0QEzX/E.QXIumPKwRaT6QHDOucS7A0."]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 0.8ms | Allocations: 11504)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: NOT NULL constraint failed: workers.last_name):
+  
+sqlite3 (1.4.2) lib/sqlite3/statement.rb:108:in `step'
+sqlite3 (1.4.2) lib/sqlite3/statement.rb:108:in `block in each'
+sqlite3 (1.4.2) lib/sqlite3/statement.rb:107:in `loop'
+sqlite3 (1.4.2) lib/sqlite3/statement.rb:107:in `each'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/sqlite3/database_statements.rb:58:in `to_a'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/sqlite3/database_statements.rb:58:in `block (2 levels) in exec_query'
+activesupport (6.1.5.1) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (6.1.5.1) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (6.1.5.1) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/sqlite3/database_statements.rb:49:in `block in exec_query'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract_adapter.rb:696:in `block (2 levels) in log'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract_adapter.rb:695:in `block in log'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract_adapter.rb:687:in `log'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/sqlite3/database_statements.rb:48:in `exec_query'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `exec_insert'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/database_statements.rb:171:in `insert'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/query_cache.rb:22:in `insert'
+activerecord (6.1.5.1) lib/active_record/persistence.rb:375:in `_insert_record'
+activerecord (6.1.5.1) lib/active_record/persistence.rb:929:in `_create_record'
+activerecord (6.1.5.1) lib/active_record/counter_cache.rb:166:in `_create_record'
+activerecord (6.1.5.1) lib/active_record/locking/optimistic.rb:79:in `_create_record'
+activerecord (6.1.5.1) lib/active_record/attribute_methods/dirty.rb:201:in `_create_record'
+activerecord (6.1.5.1) lib/active_record/callbacks.rb:461:in `block in _create_record'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:824:in `_run_create_callbacks'
+activerecord (6.1.5.1) lib/active_record/callbacks.rb:461:in `_create_record'
+activerecord (6.1.5.1) lib/active_record/timestamp.rb:108:in `_create_record'
+activerecord (6.1.5.1) lib/active_record/persistence.rb:900:in `create_or_update'
+activerecord (6.1.5.1) lib/active_record/callbacks.rb:457:in `block in create_or_update'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:824:in `_run_save_callbacks'
+activerecord (6.1.5.1) lib/active_record/callbacks.rb:457:in `create_or_update'
+activerecord (6.1.5.1) lib/active_record/timestamp.rb:126:in `create_or_update'
+activerecord (6.1.5.1) lib/active_record/persistence.rb:474:in `save'
+activerecord (6.1.5.1) lib/active_record/validations.rb:47:in `save'
+activerecord (6.1.5.1) lib/active_record/transactions.rb:298:in `block in save'
+activerecord (6.1.5.1) lib/active_record/transactions.rb:354:in `block in with_transaction_returning_status'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/database_statements.rb:320:in `block in transaction'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/transaction.rb:319:in `block in within_new_transaction'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (6.1.5.1) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/transaction.rb:317:in `within_new_transaction'
+activerecord (6.1.5.1) lib/active_record/connection_adapters/abstract/database_statements.rb:320:in `transaction'
+activerecord (6.1.5.1) lib/active_record/transactions.rb:350:in `with_transaction_returning_status'
+activerecord (6.1.5.1) lib/active_record/transactions.rb:298:in `save'
+activerecord (6.1.5.1) lib/active_record/suppressor.rb:44:in `save'
+devise (4.8.1) app/controllers/devise/registrations_controller.rb:19:in `create'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.5.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (6.1.5.1) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 08:55:10 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering worker/registrations/new.html.erb within layouts/application
+  Rendered worker/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered worker/shared/_links.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered worker/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3539)
+Completed 200 OK in 19ms (Views: 8.2ms | ActiveRecord: 0.9ms | Allocations: 11214)
+
+
+Started GET "/worker/sign_up" for 49.98.68.100 at 2022-05-11 08:55:13 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/registrations/new.html.erb within layouts/application
+  Rendered worker/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered worker/shared/_links.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered worker/registrations/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1332)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3526)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4110)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/worker" for 49.98.68.100 at 2022-05-11 08:56:03 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "worker"=>{"last_name"=>"山田", "first_name"=>"太郎", "email"=>"a@a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "workers" WHERE "workers"."email" = ? LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+  [1m[36mWorker Create (5.2ms)[0m  [1m[32mINSERT INTO "workers" ("created_at", "updated_at", "last_name", "first_name", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2022-05-11 08:56:03.810851"], ["updated_at", "2022-05-11 08:56:03.810851"], ["last_name", "山田"], ["first_name", "太郎"], ["email", "a@a"], ["encrypted_password", "$2a$12$cmhrDDGxFRVL44dTMHSk5uSKxzsVr6Nn1GGi4Nl1lZw/M.YZukY2G"]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/progresses
+Completed 302 Found in 329ms (ActiveRecord: 12.0ms | Allocations: 9491)
+
+
+Started GET "/progresses" for 49.98.68.100 at 2022-05-11 08:56:03 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 24.1ms | Allocations: 4982)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 6968)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.2ms | Allocations: 8092)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `destroy_customer_session_path' for #<ActionView::Base:0x007fcd3c4abad0>
+Did you mean?  destroy_worker_session_path
+               destroy_admin_session_path):
+    55:               <% end %>
+    56:             </li>
+    57:             <li class="nav-item">
+    58:               <%= link_to destroy_customer_session_path, method: :delete, class:"nav-link text-light text-nowrap btn btn-outline-success mr-1 mb-1" do %>
+    59:                 <i class="fas fa-sign-out-alt"></i> ログアウト
+    60:               <% end %>
+    61:             </li>
+  
+app/views/layouts/_header.html.erb:58
+app/views/layouts/application.html.erb:14
+Started GET "/progresses" for 49.98.68.100 at 2022-05-11 08:56:55 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.6ms | Allocations: 2198)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 4567)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 5892)
+
+
+Started GET "/workers/1" for 49.98.68.100 at 2022-05-11 08:57:01 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/show.html.erb within layouts/application
+  Rendered worker/workers/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.5ms | Allocations: 1278)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3266)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 4373)
+
+
+Started GET "/workers" for 49.98.68.100 at 2022-05-11 08:57:07 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/index.html.erb within layouts/application
+  Rendered worker/workers/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.3ms | Allocations: 1278)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3301)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 3823)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-11 08:57:08 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.5ms | Allocations: 1278)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3301)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 4400)
+
+
+Started GET "/workers" for 49.98.68.100 at 2022-05-11 08:57:10 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/index.html.erb within layouts/application
+  Rendered worker/workers/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.3ms | Allocations: 1281)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3223)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 3622)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-11 08:57:12 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 1266)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3205)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 3604)
+
+
+Started GET "/workers/1" for 49.98.68.100 at 2022-05-11 08:57:14 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/show.html.erb within layouts/application
+  Rendered worker/workers/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 1266)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3205)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 3603)
+
+
+Started GET "/workers/1" for 49.98.68.100 at 2022-05-11 09:03:28 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/show.html.erb within layouts/application
+  Rendered worker/workers/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/layouts/_header.html.erb:35
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 13.5ms | Allocations: 8318)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 10671)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.5ms | Allocations: 12009)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-11 09:03:50 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3025)
+
+
+  
+NameError (uninitialized constant Worker::ProductsController::Products):
+  
+app/controllers/worker/products_controller.rb:3:in `index'
+Started GET "/products" for 49.98.68.100 at 2022-05-11 09:04:02 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+Completed 500 Internal Server Error in 4ms (Allocations: 3004)
+
+
+  
+NameError (uninitialized constant Worker::ProductsController::Products):
+  
+app/controllers/worker/products_controller.rb:3:in `index'
+Started GET "/products" for 49.98.68.100 at 2022-05-11 09:04:41 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1618)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1688)
+Completed 500 Internal Server Error in 9ms (Allocations: 3814)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    16:             <th></th>
+    17:           </tr>
+    18:         </thead>
+    19:         <% @products.each do |product| %>
+    20:         <tbody>
+    21:           <tr>
+    22:             <td><%= product.id %></td>
+  
+app/views/worker/products/index.html.erb:19
+Started GET "/products" for 49.98.68.100 at 2022-05-11 09:05:54 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 11.3ms | Allocations: 8171)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 11815)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 1.2ms | Allocations: 12875)
+
+
+Started GET "/workers" for 49.98.68.100 at 2022-05-11 09:18:54 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/index.html.erb within layouts/application
+  Rendered worker/workers/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/layouts/_header.html.erb:35
+  [1m[36mWorker Load (0.8ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 7.3ms | Allocations: 2104)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 4084)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 1.1ms | Allocations: 5183)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-11 09:30:06 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 10.5ms | Allocations: 6624)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 9909)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 1.0ms | Allocations: 11605)
+
+
+Started GET "/workers" for 49.98.68.100 at 2022-05-11 09:31:37 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/index.html.erb within layouts/application
+  Rendered worker/workers/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.1ms | Allocations: 1287)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3189)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 3735)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-11 09:31:38 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 674)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 1263)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4791)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 5201)
+
+
+Started GET "/workers/1" for 49.98.68.100 at 2022-05-11 09:31:40 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/show.html.erb within layouts/application
+  Rendered worker/workers/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 1278)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3303)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 3830)
+
+
+Started GET "/workers/1" for 49.98.68.100 at 2022-05-11 09:31:43 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/show.html.erb within layouts/application
+  Rendered worker/workers/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.6ms | Allocations: 1266)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3205)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 3604)
+
+
+Started GET "/progresses" for 49.98.68.100 at 2022-05-11 09:31:44 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.5ms | Allocations: 1278)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3303)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 4399)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-11 09:31:46 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 1275)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3857)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 4268)
+
+
+Started DELETE "/worker/sign_out" for 49.98.68.100 at 2022-05-11 09:33:49 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 7ms (ActiveRecord: 0.1ms | Allocations: 2283)
+
+
+Started GET "/" for 49.98.68.100 at 2022-05-11 09:33:49 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.7ms | Allocations: 233)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 1005)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-11 09:37:31 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1663)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 2.5ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5146)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.4ms | Allocations: 7579)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-11 09:37:34 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 674)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 298)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2877)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 3282)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 09:37:38 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 1.1ms | Allocations: 312)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 274)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3859)
+Completed 200 OK in 20ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 11093)
+
+
+Started POST "/worker/sign_in" for 49.98.68.100 at 2022-05-11 09:37:47 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "worker"=>{"email"=>"a@a", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mWorker Load (0.7ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."email" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/progresses
+Completed 302 Found in 309ms (ActiveRecord: 0.7ms | Allocations: 4152)
+
+
+Started GET "/progresses" for 49.98.68.100 at 2022-05-11 09:37:47 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.8ms | Allocations: 1309)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3334)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 4424)
+
+
+Started DELETE "/worker/sign_out" for 49.98.68.100 at 2022-05-11 09:37:52 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 2261)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1+)):
+  
+app/controllers/worker/sessions_controller.rb:11:in `after_sign_out_path_for'
+Started GET "/progresses" for 49.98.68.100 at 2022-05-11 09:38:01 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.3ms | Allocations: 1267)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3206)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 3603)
+
+
+Started DELETE "/worker/sign_out" for 49.98.68.100 at 2022-05-11 09:38:32 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.0ms | Allocations: 9323)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+actionpack (6.1.5.1) lib/action_controller/metal/redirecting.rb:59:in `redirect_to'
+actionpack (6.1.5.1) lib/action_controller/metal/flash.rb:58:in `redirect_to'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:66:in `block in redirect_to'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:65:in `redirect_to'
+turbolinks (5.2.1) lib/turbolinks/redirection.rb:12:in `redirect_to'
+devise (4.8.1) app/controllers/devise/sessions_controller.rb:80:in `block (2 levels) in respond_to_on_destroy'
+actionpack (6.1.5.1) lib/action_controller/metal/mime_responds.rb:214:in `respond_to'
+devise (4.8.1) app/controllers/devise/sessions_controller.rb:78:in `respond_to_on_destroy'
+devise (4.8.1) app/controllers/devise/sessions_controller.rb:31:in `destroy'
+actionpack (6.1.5.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.5.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (6.1.5.1) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/progresses" for 49.98.68.100 at 2022-05-11 09:38:52 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/layouts/_header.html.erb:35
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 25.5ms | Allocations: 8031)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 9973)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 1.0ms | Allocations: 10522)
+
+
+Started DELETE "/worker/sign_out" for 49.98.68.100 at 2022-05-11 09:38:55 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 1993)
+
+
+Started GET "/" for 49.98.68.100 at 2022-05-11 09:38:55 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.1ms | Allocations: 231)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 921)
+
+
+Started GET "/progresses" for 49.98.68.100 at 2022-05-11 09:38:57 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2260)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2651)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 09:39:00 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1071)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 274)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3273)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4046)
+
+
+Started POST "/worker/sign_in" for 49.98.68.100 at 2022-05-11 09:39:38 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "worker"=>{"email"=>"a@a", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."email" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/progresses
+Completed 302 Found in 335ms (ActiveRecord: 1.2ms | Allocations: 9734)
+
+
+Started GET "/progresses" for 49.98.68.100 at 2022-05-11 09:39:38 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.8ms | Allocations: 1318)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3265)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 3807)
+
+
+Started DELETE "/worker/sign_out" for 49.98.68.100 at 2022-05-11 09:39:45 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/worker/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 1888)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 09:39:45 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1077)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3281)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3899)
+
+
+Started POST "/worker/sign_in" for 49.98.68.100 at 2022-05-11 09:39:53 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "worker"=>{"email"=>"a@a", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."email" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/progresses
+Completed 302 Found in 306ms (ActiveRecord: 0.1ms | Allocations: 2257)
+
+
+Started GET "/progresses" for 49.98.68.100 at 2022-05-11 09:39:53 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.3ms | Allocations: 1265)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3209)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 3603)
+
+
+Started DELETE "/worker/sign_out" for 49.98.68.100 at 2022-05-11 09:40:36 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/worker/sign_in
+Completed 302 Found in 15ms (ActiveRecord: 1.0ms | Allocations: 8936)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-11 09:40:36 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1077)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 287)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3292)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4062)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-11 09:40:37 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2805)
+
+
+  
+NoMethodError (undefined method `authenticate_worker' for #<Worker::ProductsController:0x00000005d8e8c0>
+Did you mean?  authenticate_worker!):
+  
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.5.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.5.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.5.1) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'

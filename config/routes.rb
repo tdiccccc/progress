@@ -13,8 +13,8 @@ Rails.application.routes.draw do
 
   #従業員用
   devise_for :worker,skip: [:passwords], controllers: {
-    registrations: "workers/registrations",
-    sessions: 'workers/sessions'
+    registrations: "worker/registrations",
+    sessions: 'worker/sessions'
   }
   scope module: :worker do
     resources :workers, only: [:index, :show, :edit, :update]
