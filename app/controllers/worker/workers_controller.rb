@@ -1,4 +1,5 @@
 class Worker::WorkersController < ApplicationController
+  
   def index
     @workers = Worker.all
   end
