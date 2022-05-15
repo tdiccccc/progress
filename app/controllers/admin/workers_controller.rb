@@ -16,13 +16,14 @@ class Admin::WorkersController < ApplicationController
   def update
     @worker = Worker.find(params[:id])
     @worker.update(workers_params)
-    redirect_to worker_path(params[:id])
+    flash[:notice] = "顧客情報を更新しました。"
+    redirect_to admin_worker_path(@worker)
   end
 
   private
 
   def workers_params
-    params.require(:worker).permit(:first_name, :last_name, :email)
+    params.require(:worker).permit(:first_name, :last_name, :email, :is_deleted)
   end
 
 end

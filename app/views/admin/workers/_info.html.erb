@@ -2,7 +2,7 @@
   <tbody>
     <tr>
       <td>従業員名</td>
-      <td><%= worker.last_name %>　<%= worker.first_name %></td>
+      <td><%= worker.last_name %> <%= worker.first_name %></td>
     </tr>
     <tr>
       <td>ID</td>
@@ -19,6 +19,16 @@
     <tr>
       <td>月間件数</td>
       <td></td>
+    </tr>
+    <tr>
+      <td>ステータス</td>
+      <td>
+        <% if worker.is_deleted == false %>
+          <td class="text-success">有効</td>
+        <% elsif %>
+          <td class="text-danger">退会</td>
+        <% end %>
+      </td>
     </tr>
   </tbody>
 </table>

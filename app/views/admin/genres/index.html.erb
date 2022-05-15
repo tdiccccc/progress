@@ -4,12 +4,13 @@
   </div>
   <div class="row justify-content-center">
     <div class="col-md-10">
-      <div id="form">
+      <div id="genre-form">
         <%= render 'form' , genre: @genre %>
       </div>
       <div id="genre-table">
         <%= render 'index', genres: @genres %>
       </div>
     </div>
+    <%= paginate @genres %>
   </div>
 </div>

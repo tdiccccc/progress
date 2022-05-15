@@ -3,15 +3,16 @@ class Admin::GenresController < ApplicationController
 
   def index
     @genre = Genre.new
-    @genres = Genre.all
+    @genres = Genre.page(params[:page])
   end
 
   def create
     @genre = Genre.new(genre_params)
+    @genres = Genre.page(params[:page])
     if @genre.save
+      flash.now[:notice] = "ジャンルを登録しました"
     else
-      @genres = Genre.all
-      render :index
+      @genres = Genre.page(params[:page])
     end
   end
 

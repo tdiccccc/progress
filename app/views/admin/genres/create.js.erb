@@ -1,2 +1,3 @@
-$("#form").html("<%= j(render 'form' , genre: @genre)%>")
-$("#genre-table").html("<%= j(render 'index', genres: @genres)%>")
+$("#flash-success").html("<%= j(render "layouts/notice") %>");
+$("#genre-table").html("<%= j(render 'index', genres: @genres) %>");
+$(".form-control").val("");

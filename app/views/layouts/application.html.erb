@@ -10,20 +10,29 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <hearder>
-    <%= render 'layouts/header' %>
-  </hearder>
   <body>
-    <%= yield %>
-  </body>
-  <footer>
-    <div class="py-4 bg-success text-center">
-      <div class="container">
-        <i class="fab fa-twitter text-white-50"></i>
-        <i class="fab fa-instagram text-white-50"></i>
-        <i class="fab fa-facebook text-white-50"></i>
-        <p class="text-white small">&copy; 2022 Daichi Taguchi</p>
+    <hearder>
+      <%= render 'layouts/header' %>
+    </hearder>
+
+    <main>
+       <div id="flash-success">
+        <%=render "layouts/notice" %>
       </div>
-    </div>
-  </footer>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <div class="py-4 bg-success text-center">
+        <div class="container">
+          <i class="fab fa-twitter text-white-50"></i>
+          <i class="fab fa-instagram text-white-50"></i>
+          <i class="fab fa-facebook text-white-50"></i>
+          <p class="text-white small">&copy; 2022 Daichi Taguchi</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
 </html>
