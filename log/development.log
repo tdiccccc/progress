@@ -9698,3 +9698,511 @@ Processing by Admin::GenresController#index as HTML
 Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.4ms | Allocations: 9146)
 
 
+Started GET "/admin/products" for 49.98.68.100 at 2022-05-15 07:34:11 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdmin Load (1.8ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering admin/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admin/products/index.html.erb:25
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/admin/products/index.html.erb:30
+  Rendered admin/products/index.html.erb within layouts/application (Duration: 39.0ms | Allocations: 9434)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ec2-user/environment/progress/public/packs
+[Webpacker] warning ../../package.json: No license field
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+302 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 302:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2) or calc($input-padding-y / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+498 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 498:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($custom-control-indicator-size, 2) or calc($custom-control-indicator-size / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+568 │ $custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;
+    │                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 568:49  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+713 │ $nav-divider-margin-y:              $spacer / 2 !default;
+    │                                     ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 713:37  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+718 │ $navbar-padding-y:                  $spacer / 2 !default;
+    │                                     ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 718:37  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+WARNING: 67 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: 87135d69db492c56ac72
+Version: webpack 4.46.0
+Time: 11346ms
+Built at: 05/15/2022 7:34:25 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e044d68441ac40b09e57.js   3.29 MiB  application  [emitted] [immutable]  application
+js/application-e044d68441ac40b09e57.js.map   3.48 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e044d68441ac40b09e57.js js/application-e044d68441ac40b09e57.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 633 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 1.01 MiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 863 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 119 hidden modules
+
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 296)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 13972.9ms | Allocations: 12904)
+Completed 200 OK in 13991ms (Views: 13975.8ms | ActiveRecord: 2.9ms | Allocations: 16528)
+
+
+Started DELETE "/admin/sign_out" for 49.98.68.100 at 2022-05-15 07:35:08 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/sign_in
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms | Allocations: 1727)
+
+
+Started GET "/admin/sign_in" for 49.98.68.100 at 2022-05-15 07:35:08 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 954)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 274)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3269)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 3882)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-15 07:35:12 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 2.3ms | Allocations: 318)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1739)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 274)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4012)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 5304)
+
+
+Started POST "/worker/sign_in" for 49.98.68.100 at 2022-05-15 07:35:32 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "worker"=>{"email"=>"a@a", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mWorker Load (0.3ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."email" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 308ms (ActiveRecord: 0.3ms | Allocations: 1955)
+
+
+Started GET "/worker/sign_in" for 49.98.68.100 at 2022-05-15 07:35:33 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/sessions/new.html.erb within layouts/application
+  Rendered worker/shared/_links.html.erb (Duration: 0.2ms | Allocations: 104)
+  Rendered worker/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1004)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 266)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3305)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 3925)
+
+
+Started POST "/worker/sign_in" for 49.98.68.100 at 2022-05-15 07:35:41 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "worker"=>{"email"=>"b@b", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."email" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["email", "b@b"], ["LIMIT", 1]]
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/progresses
+Completed 302 Found in 318ms (ActiveRecord: 0.1ms | Allocations: 2669)
+
+
+Started GET "/progresses" for 49.98.68.100 at 2022-05-15 07:35:41 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 7.3ms | Allocations: 1307)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 3450)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.2ms | Allocations: 4511)
+
+
+Started GET "/workers/2" for 49.98.68.100 at 2022-05-15 07:35:46 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWorker Load (1.6ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/worker/workers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/show.html.erb within layouts/application
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/workers/_info.html.erb:27
+  Rendered worker/workers/_info.html.erb (Duration: 6.3ms | Allocations: 1325)
+  Rendered worker/workers/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1676)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 364)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 4013)
+Completed 200 OK in 23ms (Views: 15.7ms | ActiveRecord: 1.6ms | Allocations: 5751)
+
+
+Started GET "/workers" for 49.98.68.100 at 2022-05-15 07:35:49 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/index.html.erb within layouts/application
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers"[0m
+  ↳ app/views/worker/workers/index.html.erb:17
+  Rendered worker/workers/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1059)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 6.9ms | Allocations: 1266)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 4338)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.3ms | Allocations: 4864)
+
+
+Started GET "/workers/1" for 49.98.68.100 at 2022-05-15 07:35:51 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/workers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/show.html.erb within layouts/application
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/workers/_info.html.erb:27
+  Rendered worker/workers/_info.html.erb (Duration: 4.2ms | Allocations: 951)
+  Rendered worker/workers/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1044)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 361)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3415)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.2ms | Allocations: 4359)
+
+
+Started GET "/workers" for 49.98.68.100 at 2022-05-15 07:35:53 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/index.html.erb within layouts/application
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers"[0m
+  ↳ app/views/worker/workers/index.html.erb:17
+  Rendered worker/workers/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 27.2ms | Allocations: 1259)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 4061)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.2ms | Allocations: 4464)
+
+
+Started GET "/workers/2" for 49.98.68.100 at 2022-05-15 07:35:55 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/worker/workers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/show.html.erb within layouts/application
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/workers/_info.html.erb:27
+  Rendered worker/workers/_info.html.erb (Duration: 3.9ms | Allocations: 1006)
+  Rendered worker/workers/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 357)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3465)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.2ms | Allocations: 4408)
+
+
+Started GET "/progresses" for 49.98.68.100 at 2022-05-15 07:36:00 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.5ms | Allocations: 1278)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3329)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.1ms | Allocations: 3720)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-15 07:36:03 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 19.7ms | Allocations: 3642)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.2ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 6923)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.6ms | Allocations: 7998)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-15 07:36:04 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.8ms | Allocations: 1278)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 3410)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.1ms | Allocations: 3924)
+
+
+Started GET "/admin/products/1" for 49.98.68.100 at 2022-05-15 07:36:48 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 236)
+
+
+Started GET "/admin/sign_in" for 49.98.68.100 at 2022-05-15 07:36:48 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/shared/_links.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered admin/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 945)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.2ms | Allocations: 1255)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4237)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.1ms | Allocations: 4862)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-15 07:36:56 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 25.3ms | Allocations: 3371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (3.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 6.4ms | Allocations: 1259)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 46.4ms | Allocations: 6639)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 3.6ms | Allocations: 7044)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-15 07:38:30 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 3635)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.6ms | Allocations: 2189)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 8452)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.5ms | Allocations: 9789)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-15 07:38:32 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.4ms | Allocations: 1278)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 3407)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.1ms | Allocations: 3929)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-15 07:40:49 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 17.5ms | Allocations: 4648)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 13.5ms | Allocations: 7917)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 15095)
+Completed 200 OK in 65ms (Views: 45.5ms | ActiveRecord: 6.2ms | Allocations: 22243)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-15 07:44:49 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 9.6ms | Allocations: 4707)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 13.4ms | Allocations: 7912)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 15148)
+Completed 200 OK in 53ms (Views: 34.6ms | ActiveRecord: 2.2ms | Allocations: 22155)
+
+
+Started GET "/progresses/1" for 49.98.68.100 at 2022-05-15 07:44:52 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/show.html.erb within layouts/application
+  Rendered worker/progresses/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 8.9ms | Allocations: 1274)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 3390)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.1ms | Allocations: 4454)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-15 07:45:25 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.6ms | Allocations: 2189)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 5865)
+Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 0.4ms | Allocations: 7739)
+
+
