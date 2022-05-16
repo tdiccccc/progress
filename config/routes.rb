@@ -19,7 +19,10 @@ Rails.application.routes.draw do
   scope module: :worker do
     resources :workers, only: [:index, :show, :edit, :update]
     resources :products, only: [:index, :show]
-    resources :progresses, only: [:index, :show]
+    resources :progresses, only: [:index, :show, :create]
+    
+    post 'progresses/start' => 'progresses#start' #商品開始
+    post 'progresses/finish' => 'progresses#finish' #商品終了
   end
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

@@ -10206,3 +10206,1451 @@ Processing by Worker::ProductsController#show as HTML
 Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 0.4ms | Allocations: 7739)
 
 
+Started GET "/workers/2" for 49.98.68.100 at 2022-05-16 05:46:04 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Worker::WorkersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWorker Load (0.5ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/worker/workers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/show.html.erb within layouts/application
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/workers/_info.html.erb:27
+  Rendered worker/workers/_info.html.erb (Duration: 6.1ms | Allocations: 1498)
+  Rendered worker/workers/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1971)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 5.7ms | Allocations: 1334)
+  Rendered layouts/_notice.html.erb (Duration: 0.7ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 6016)
+Completed 200 OK in 76ms (Views: 45.0ms | ActiveRecord: 1.3ms | Allocations: 16382)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-16 05:46:46 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (6.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 65.2ms | Allocations: 14623)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 6.9ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 81.1ms | Allocations: 17805)
+Completed 200 OK in 92ms (Views: 75.3ms | ActiveRecord: 9.9ms | Allocations: 20303)
+
+
+Started GET "/workers" for 49.98.68.100 at 2022-05-16 05:46:52 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::WorkersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/workers/index.html.erb within layouts/application
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers"[0m
+  ↳ app/views/worker/workers/index.html.erb:17
+  Rendered worker/workers/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2032)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.3ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 5313)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.3ms | Allocations: 5853)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-16 05:46:57 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 3379)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.9ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 6659)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.5ms | Allocations: 7064)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 05:47:21 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1058)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.7ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 4339)
+Completed 200 OK in 27ms (Views: 21.7ms | ActiveRecord: 0.3ms | Allocations: 5532)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 05:47:32 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 857)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.3ms | Allocations: 1259)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 4125)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.3ms | Allocations: 5067)
+
+
+Started GET "/progresses/1" for 49.98.68.100 at 2022-05-16 05:47:35 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.1ms | Allocations: 4613)
+
+
+  
+NoMethodError (undefined method `progress' for #<Worker:0x00007f75d8b8a4e8>
+Did you mean?  progresses):
+  
+app/controllers/worker/progresses_controller.rb:9:in `show'
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 05:48:53 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 9.4ms | Allocations: 2189)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 5865)
+Completed 200 OK in 36ms (Views: 30.8ms | ActiveRecord: 0.4ms | Allocations: 7739)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-16 05:48:59 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 3637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.3ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 6917)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.5ms | Allocations: 7451)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 05:49:11 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 856)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.7ms | Allocations: 1259)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 4124)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.3ms | Allocations: 5069)
+
+
+Started GET "/progresses/1" for 49.98.68.100 at 2022-05-16 05:49:14 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.1ms | Allocations: 3805)
+
+
+  
+NoMethodError (undefined method `progress' for #<Worker:0x0000000004df7240>
+Did you mean?  progresses):
+  
+app/controllers/worker/progresses_controller.rb:9:in `show'
+Started GET "/progresses/1" for 49.98.68.100 at 2022-05-16 05:49:14 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms | Allocations: 3803)
+
+
+  
+NoMethodError (undefined method `progress' for #<Worker:0x0000000004feb1c8>
+Did you mean?  progresses):
+  
+app/controllers/worker/progresses_controller.rb:9:in `show'
+Started GET "/products" for 49.98.68.100 at 2022-05-16 05:49:15 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 3373)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 6.0ms | Allocations: 1259)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 6641)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.5ms | Allocations: 7044)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-16 05:58:30 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 21.4ms | Allocations: 4380)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.6ms | Allocations: 2216)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 9224)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 1.0ms | Allocations: 10562)
+
+
+Started GET "/progresses/1" for 49.98.68.100 at 2022-05-16 05:58:33 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.1ms | Allocations: 3804)
+
+
+  
+NoMethodError (undefined method `progress' for #<Worker:0x00007f75e011e740>
+Did you mean?  progresses):
+  
+app/controllers/worker/progresses_controller.rb:9:in `show'
+Started GET "/progresses/1" for 49.98.68.100 at 2022-05-16 06:00:03 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/show.html.erb within layouts/application
+  Rendered worker/progresses/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1518)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 1588)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 4.0ms | Allocations: 11304)
+
+
+  
+ActionView::Template::Error (undefined method `product' for nil:NilClass):
+    2:   <tbody>
+    3:     <tr>
+    4:       <td>商品ID</td>
+    5:       <td><%= @progress.product.id %></td>
+    6:     </tr>
+    7:     <tr>
+    8:       <td>商品名</td>
+  
+app/views/worker/progresses/show.html.erb:5
+Started GET "/products" for 49.98.68.100 at 2022-05-16 06:27:36 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 40.8ms | Allocations: 11025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.6ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.5ms | Allocations: 1307)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 77.4ms | Allocations: 14246)
+Completed 200 OK in 84ms (Views: 80.2ms | ActiveRecord: 8.0ms | Allocations: 15888)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:27:40 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1054)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 7.8ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 4334)
+Completed 200 OK in 27ms (Views: 22.1ms | ActiveRecord: 0.4ms | Allocations: 5507)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:29:01 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 7.1ms | Allocations: 2189)
+  Rendered layouts/_notice.html.erb (Duration: 0.9ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 5865)
+Completed 200 OK in 37ms (Views: 32.5ms | ActiveRecord: 0.4ms | Allocations: 7738)
+
+
+Started GET "/progresses/1" for 49.98.68.100 at 2022-05-16 06:29:05 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/show.html.erb within layouts/application
+  Rendered worker/progresses/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 383)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2500)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.1ms | Allocations: 4688)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:42:43 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 16.8ms | Allocations: 7934)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 8004)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.6ms | Allocations: 14541)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `progress' for #<ActionView::Base:0x007f75e01ae598>
+Did you mean?  progress_url):
+    24:           </tr>
+    25:         </tbody>
+    26:       </table>
+    27:       <%= form_with model:progress do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => product.id %>
+    29:         <%= f.submit 'この商品を開始', class: "btn btn-success" %>
+    30:       <%end%>
+  
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:43:41 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 16.7ms | Allocations: 7990)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 8060)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 2.1ms | Allocations: 20118)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `progress' for #<ActionView::Base:0x007f75e002e808>
+Did you mean?  @progress):
+    24:           </tr>
+    25:         </tbody>
+    26:       </table>
+    27:       <%= form_with model:progress do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => product.id %>
+    29:         <%= f.submit 'この商品を開始', class: "btn btn-success" %>
+    30:       <%end%>
+  
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:44:09 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 14.8ms | Allocations: 4446)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 4516)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms | Allocations: 5453)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `progress' for #<ActionView::Base:0x007f75d81e5af0>
+Did you mean?  @progress):
+    24:           </tr>
+    25:         </tbody>
+    26:       </table>
+    27:       <%= form_with model:progress do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => product.id %>
+    29:         <%= f.submit 'この商品を開始', class: "btn btn-success" %>
+    30:       <%end%>
+  
+app/views/worker/products/show.html.erb:27
+Started GET "/products" for 49.98.68.100 at 2022-05-16 06:44:17 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 3656)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 13.3ms | Allocations: 7922)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 14206)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 1.8ms | Allocations: 14738)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-16 06:44:22 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 3380)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.5ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 6659)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.6ms | Allocations: 7062)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:44:24 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 19.6ms | Allocations: 4458)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 4528)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms | Allocations: 5466)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `progress' for #<ActionView::Base:0x007f75d81b98b0>
+Did you mean?  @progress):
+    24:           </tr>
+    25:         </tbody>
+    26:       </table>
+    27:       <%= form_with model:progress do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => product.id %>
+    29:         <%= f.submit 'この商品を開始', class: "btn btn-success" %>
+    30:       <%end%>
+  
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:46:03 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 16.9ms | Allocations: 8144)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 8214)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 2.1ms | Allocations: 19758)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `progress' for #<ActionView::Base:0x007f75d8b43110>
+Did you mean?  @progress):
+    24:           </tr>
+    25:         </tbody>
+    26:       </table>
+    27:       <%= form_with model:progress do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => product.id %>
+    29:         <%= f.submit 'この商品を開始', class: "btn btn-success" %>
+    30:       <%end%>
+  
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:46:51 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 10.0ms | Allocations: 4840)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 13.5ms | Allocations: 7882)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 15252)
+Completed 200 OK in 69ms (Views: 36.1ms | ActiveRecord: 3.6ms | Allocations: 27647)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:46:56 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 809)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 7.6ms | Allocations: 1275)
+  Rendered layouts/_notice.html.erb (Duration: 1.3ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 4097)
+Completed 200 OK in 35ms (Views: 28.9ms | ActiveRecord: 0.3ms | Allocations: 5057)
+
+
+Started GET "/products" for 49.98.68.100 at 2022-05-16 06:46:59 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 35.9ms | Allocations: 3656)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 11.7ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 6936)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 1.3ms | Allocations: 7469)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:47:02 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 809)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 5.7ms | Allocations: 1263)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 4082)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.4ms | Allocations: 5046)
+
+
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:47:11 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 15.4ms | Allocations: 4697)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 4767)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms | Allocations: 6639)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `progress' for #<ActionView::Base:0x00000002e78270>
+Did you mean?  @progress):
+    24:           </tr>
+    25:         </tbody>
+    26:       </table>
+    27:       <%= form_with model:progress do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => product.id %>
+    29:         <%= f.submit 'この商品を開始する', class: "btn btn-success" %>
+    30:       <%end%>
+  
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:48:55 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 13.1ms | Allocations: 4867)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 4937)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.2ms | Allocations: 6808)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x00000006579b48>
+Did you mean?  @product):
+    25:         </tbody>
+    26:       </table>
+    27:       <%= form_with model: @progress do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => product.id %>
+    29:         <%= f.submit 'この商品を開始する', class: "btn btn-success" %>
+    30:       <%end%>
+    31:     </div>
+  
+app/views/worker/products/show.html.erb:28
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:49:08 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1260)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1331)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms | Allocations: 3203)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+
+      <table class="table table-hover table-inverse">
+        <tbody>
+          <tr>
+            <td>商品ID</td>
+            <td><%= @product.id %></td>
+          </tr>
+          <tr>
+            <td>商品名</td>
+            <td><%= @product.genre.name%></td>
+          </tr>
+          <tr>
+            <td>数量</td>
+            <td><%= @product.product_count %></td>
+          </tr>
+          <tr>
+            <td>納期</td>
+            <td><%= @product.delivery_date %></td>
+          </tr>
+        </tbody>
+      </table>
+      <%= form_with model: @progress do |f|%>
+        <%= f.hidden_field : @product_id, :value => product.id %>
+        <%= f.submit 'この商品を開始する', class: "btn btn-success" %>
+      <%end%>
+    </div>
+  </div>
+</div>
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:    
+7:          <table class="table table-hover table-inverse">
+8:            <tbody>
+9:              <tr>
+10:                <td>商品ID</td>
+11:                <td><%= @product.id %></td>
+12:              </tr>
+13:              <tr>
+14:                <td>商品名</td>
+15:                <td><%= @product.genre.name%></td>
+16:              </tr>
+17:              <tr>
+18:                <td>数量</td>
+19:                <td><%= @product.product_count %></td>
+20:              </tr>
+21:              <tr>
+22:                <td>納期</td>
+23:                <td><%= @product.delivery_date %></td>
+24:              </tr>
+25:            </tbody>
+26:          </table>
+27:          <%= form_with model: @progress do |f|%>
+28:            <%= f.hidden_field : @product_id, :value => product.id %>
+29:            <%= f.submit 'この商品を開始する', class: "btn btn-success" %>
+30:          <%end%>
+31:        </div>
+32:      </div>
+33:    </div>
+  
+app/views/worker/products/show.html.erb:28: syntax error, unexpected ':'
+app/views/worker/products/show.html.erb:28: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/views/worker/products/show.html.erb:28: syntax error, unexpected ':'
+app/views/worker/products/show.html.erb:28: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/views/worker/products/show.html.erb:28: syntax error, unexpected ':'
+app/views/worker/products/show.html.erb:28: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/views/worker/products/show.html.erb:28: syntax error, unexpected ':'
+app/views/worker/products/show.html.erb:28: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/views/worker/products/show.html.erb:28: syntax error, unexpected ':'
+app/views/worker/products/show.html.erb:28: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/views/worker/products/show.html.erb:28: syntax error, unexpected ':'
+app/views/worker/products/show.html.erb:28: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:49:16 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 24.2ms | Allocations: 4800)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 4870)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.3ms | Allocations: 6741)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x00000004a0b5a0>
+Did you mean?  @product):
+    25:         </tbody>
+    26:       </table>
+    27:       <%= form_with model: @progress do |f|%>
+    28:         <%= f.hidden_field :@product_id, :value => product.id %>
+    29:         <%= f.submit 'この商品を開始する', class: "btn btn-success" %>
+    30:       <%end%>
+    31:     </div>
+  
+app/views/worker/products/show.html.erb:28
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:49:29 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 12.6ms | Allocations: 4800)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4870)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.2ms | Allocations: 6741)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x00000004d9f540>
+Did you mean?  @product):
+    25:         </tbody>
+    26:       </table>
+    27:       <%= form_with model: @progress do |f|%>
+    28:         <%= f.hidden_field :@product, :value => product.id %>
+    29:         <%= f.submit 'この商品を開始する', class: "btn btn-success" %>
+    30:       <%end%>
+    31:     </div>
+  
+app/views/worker/products/show.html.erb:28
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 06:49:47 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 20.6ms | Allocations: 6296)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 11.1ms | Allocations: 2189)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 11013)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 0.3ms | Allocations: 12905)
+
+
+Started POST "/progresses" for 49.98.68.100 at 2022-05-16 07:17:29 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "progress"=>{"product_id"=>"1"}, "commit"=>"この商品を開始する"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mWorker Load (1.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProgress Load (0.7ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/progresses_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 5.3ms | Allocations: 11119)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/worker/progresses_controller.rb:14:in `create'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses"[0m
+Started GET "/products/1" for 49.98.68.100 at 2022-05-16 07:19:10 +0000
+Cannot render console from 49.98.68.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 11.6ms | Allocations: 4483)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.9ms | Allocations: 1280)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 7674)
+Completed 200 OK in 52ms (Views: 35.8ms | ActiveRecord: 1.7ms | Allocations: 16158)
+
+
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses"[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProgress Load (0.7ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses"[0m
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 12:22:19 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 38.2ms | Allocations: 10017)
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 10092)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 2.7ms | Allocations: 24755)
+
+
+  
+ActionView::Template::Error (undefined method `progress_status_i18n' for #<Class:0x00007efec8310f38>
+Did you mean?  progress_statuses_i18n
+               progress_statuses):
+    26:       </table>
+    27:       <%= form_with model: @progress do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => @product.id %>
+    29:         <%= f.select(:progress_status, Progress.progress_status_i18n.invert, {selected: progress.progress_status}) %>
+    30:         <%= f.submit 'この商品を開始する', class: "btn btn-success" %>
+    31:       <%end%>
+    32:     </div>
+  
+app/views/worker/products/show.html.erb:29
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 12:25:39 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 19.4ms | Allocations: 4587)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4658)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.2ms | Allocations: 6547)
+
+
+  
+ActionView::Template::Error (undefined method `progress_status_i18n' for #<Class:0x00007efec8310f38>
+Did you mean?  progress_statuses_i18n
+               progress_statuses):
+    26:       </table>
+    27:       <%= form_with model: @progress do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => @product.id %>
+    29:         <%= f.select(:progress_status, Progress.progress_status_i18n.invert, {selected: @progress.progress_status}) %>
+    30:         <%= f.submit 'この商品を開始する', class: "btn btn-success" %>
+    31:       <%end%>
+    32:     </div>
+  
+app/views/worker/products/show.html.erb:29
+app/views/worker/products/show.html.erb:27
+Started GET "/" for 122.223.5.191 at 2022-05-16 12:28:30 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.0ms | Allocations: 234)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 948)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 12:33:32 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 13.1ms | Allocations: 9095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.7ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 26.8ms | Allocations: 8535)
+  Rendered layouts/_notice.html.erb (Duration: 0.9ms | Allocations: 171)
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | Allocations: 20227)
+Completed 200 OK in 64ms (Views: 54.3ms | ActiveRecord: 1.8ms | Allocations: 28851)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 12:42:38 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1954)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.1ms | Allocations: 2217)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 6797)
+Completed 200 OK in 19ms (Views: 13.8ms | ActiveRecord: 1.0ms | Allocations: 9304)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 12:48:39 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1273)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1344)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms | Allocations: 3824)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+
+      <table class="table table-hover table-inverse">
+        <tbody>
+          <tr>
+            <td>商品ID</td>
+            <td><%= @product.id %></td>
+          </tr>
+          <tr>
+            <td>商品名</td>
+            <td><%= @product.genre.name%></td>
+          </tr>
+          <tr>
+            <td>数量</td>
+            <td><%= @product.product_count %></td>
+          </tr>
+          <tr>
+            <td>納期</td>
+            <td><%= @product.delivery_date %></td>
+          </tr>
+        </tbody>
+      </table>
+      <%= form_with model: @progress, url: progresses_start_path, method: :post, do |f|%>
+        <%= f.hidden_field :product_id, :value => @product.id %>
+        <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+        <%= f.submit '開始する', class: "btn btn-success" %>
+      <%end%>
+      
+    </div>
+  </div>
+</div>
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:    
+7:          <table class="table table-hover table-inverse">
+8:            <tbody>
+9:              <tr>
+10:                <td>商品ID</td>
+11:                <td><%= @product.id %></td>
+12:              </tr>
+13:              <tr>
+14:                <td>商品名</td>
+15:                <td><%= @product.genre.name%></td>
+16:              </tr>
+17:              <tr>
+18:                <td>数量</td>
+19:                <td><%= @product.product_count %></td>
+20:              </tr>
+21:              <tr>
+22:                <td>納期</td>
+23:                <td><%= @product.delivery_date %></td>
+24:              </tr>
+25:            </tbody>
+26:          </table>
+27:          <%= form_with model: @progress, url: progresses_start_path, method: :post, do |f|%>
+28:            <%= f.hidden_field :product_id, :value => @product.id %>
+29:            <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+30:            <%= f.submit '開始する', class: "btn btn-success" %>
+31:          <%end%>
+32:          
+33:        </div>
+34:      </div>
+35:    </div>
+  
+app/views/worker/products/show.html.erb:27: syntax error, unexpected do (for block)
+app/views/worker/products/show.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:27: syntax error, unexpected do (for block)
+app/views/worker/products/show.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:27: syntax error, unexpected do (for block)
+app/views/worker/products/show.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:27: syntax error, unexpected do (for block)
+app/views/worker/products/show.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:27: syntax error, unexpected do (for block)
+app/views/worker/products/show.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:27: syntax error, unexpected do (for block)
+app/views/worker/products/show.html.erb:37: syntax error, unexpected end, expecting end-of-input
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 12:49:07 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 14.9ms | Allocations: 1927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.5ms | Allocations: 2217)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 6776)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.5ms | Allocations: 8682)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 12:51:06 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2816)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 7.5ms | Allocations: 2190)
+  Rendered layouts/_notice.html.erb (Duration: 1.0ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 7632)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.3ms | Allocations: 9543)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 13:11:36 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 19.3ms | Allocations: 5832)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 5903)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 4.6ms | Allocations: 17368)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Hash):
+    26:       </table>
+    27:       <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => @product.id %>
+    29:         <%= f.hidden_field :progress_status, Progress.progress_statuses_i18n[:phase_one] %>
+    30:         <%#= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+    31:         <%= f.submit '開始する', class: "btn btn-success" %>
+    32:       <%end%>
+  
+app/views/worker/products/show.html.erb:29
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 13:12:37 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 9.8ms | Allocations: 3194)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3264)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms | Allocations: 5135)
+
+
+  
+ActionView::Template::Error (undefined method `hidden_select' for #<ActionView::Helpers::FormBuilder:0x0000000005e75798>
+Did you mean?  time_select):
+    26:       </table>
+    27:       <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => @product.id %>
+    29:         <%= f.hidden_select :progress_status, Progress.progress_statuses_i18n[:phase_one] %>
+    30:         <%#= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+    31:         <%= f.submit '開始する', class: "btn btn-success" %>
+    32:       <%end%>
+  
+app/views/worker/products/show.html.erb:29
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 13:13:08 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3142)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3212)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 5083)
+
+
+  
+ActionView::Template::Error (undefined method `hidden_select' for #<ActionView::Helpers::FormBuilder:0x00007efed40148a0>
+Did you mean?  time_select):
+    26:       </table>
+    27:       <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+    28:         <%= f.hidden_field :product_id, :value => @product.id %>
+    29:         <%= f.hidden_select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+    30:         <%= f.submit '開始する', class: "btn btn-success" %>
+    31:       <%end%>
+    32:       
+  
+app/views/worker/products/show.html.erb:29
+app/views/worker/products/show.html.erb:27
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 13:14:15 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (1.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 12.7ms | Allocations: 7340)
+  Rendered layouts/_notice.html.erb (Duration: 0.9ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 12604)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 1.3ms | Allocations: 14496)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 13:14:35 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2814)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.2ms | Allocations: 2189)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 7628)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.3ms | Allocations: 9514)
+
+
+Started GET "/products" for 122.223.5.191 at 2022-05-16 13:24:29 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 35.1ms | Allocations: 9562)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.5ms | Allocations: 2216)
+  Rendered layouts/_notice.html.erb (Duration: 0.4ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 14312)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.9ms | Allocations: 15645)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 13:24:37 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:15
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2820)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.4ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 6097)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 7205)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 13:35:17 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 9.5ms | Allocations: 8360)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 10.6ms | Allocations: 2216)
+  Rendered layouts/_notice.html.erb (Duration: 0.4ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 13208)
+Completed 200 OK in 33ms (Views: 27.1ms | ActiveRecord: 0.8ms | Allocations: 15716)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 13:35:39 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 10.1ms | Allocations: 9244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.2ms | Allocations: 2189)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 14059)
+Completed 200 OK in 25ms (Views: 21.4ms | ActiveRecord: 0.3ms | Allocations: 15952)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 13:35:52 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 11.0ms | Allocations: 10151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.2ms | Allocations: 2189)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 14965)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.3ms | Allocations: 16851)
+
+
+Started GET "/progresses" for 122.223.5.191 at 2022-05-16 13:37:58 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms | Allocations: 4802)
+
+
+  
+NameError (undefined local variable or method `worker' for #<Worker::ProgressesController:0x007efec8305480>
+Did you mean?  worker_url):
+  
+app/controllers/worker/progresses_controller.rb:5:in `index'
+Started GET "/products/1" for 122.223.5.191 at 2022-05-16 13:38:03 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 9020)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.3ms | Allocations: 1267)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 12296)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.3ms | Allocations: 13255)
+
+

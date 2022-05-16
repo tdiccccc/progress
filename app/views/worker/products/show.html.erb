@@ -3,28 +3,124 @@
     <h3 class="bg-light">商品詳細</h3>
   </div>
   <div class="row">
-
-      <table class="table table-hover table-inverse">
-        <tbody>
-          <tr>
-            <td>商品ID</td>
-            <td><%= @product.id %></td>
-          </tr>
-          <tr>
-            <td>商品名</td>
-            <td><%= @product.genre.name%></td>
-          </tr>
-          <tr>
-            <td>数量</td>
-            <td><%= @product.product_count %></td>
-          </tr>
-          <tr>
-            <td>納期</td>
-            <td><%= @product.delivery_date %></td>
-          </tr>
-        </tbody>
-      </table>
-      <%= link_to 'この商品を開始する', progress_path(@product), class: 'btn btn-success' %>
-    </div>
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
