@@ -20,7 +20,7 @@ Rails.application.routes.draw do
     resources :workers, only: [:index, :show, :edit, :update]
     resources :products, only: [:index, :show]
     resources :progresses, only: [:index, :show, :create]
-    
+
     post 'progresses/start' => 'progresses#start' #商品開始
     post 'progresses/finish' => 'progresses#finish' #商品終了
   end

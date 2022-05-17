@@ -6,7 +6,7 @@ class CreateProgresses < ActiveRecord::Migration[6.1]
       t.integer :product_id, null:false
       t.integer :progress_status, default: 0, null:false
       t.datetime :begin_time, null:false
-      t.datetime :end_time, null:false
+      t.datetime :end_time
       t.timestamps
     end
   end
