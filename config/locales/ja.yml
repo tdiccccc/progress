@@ -1,0 +1,10 @@
+ja:
+  enums:
+    progress:
+      progress_status:
+        waiting: 受注
+        phase_one: 印刷
+        phase_two: 断裁
+        phase_three: 加工
+        phase_four: 発送
+        finish: 完了
