@@ -17,6 +17,7 @@ Rails.application.routes.draw do
     sessions: 'worker/sessions'
   }
   scope module: :worker do
+    root to: 'products#index'
     resources :workers, only: [:index, :show, :edit, :update]
     resources :products, only: [:index, :show]
     resources :progresses, only: [:index, :show, :create]
