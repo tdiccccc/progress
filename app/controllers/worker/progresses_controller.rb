@@ -2,7 +2,7 @@ class Worker::ProgressesController < ApplicationController
   before_action :authenticate_worker!
 
   def index
-    @progresses = worker.progress
+    #@progresses = worker.progress
   end
 
   def show
