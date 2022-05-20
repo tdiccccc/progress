@@ -38,16 +38,20 @@
         <tr>
           <td>受注</td>
           <td>
-            <%= form_with model: @new_progress, url: progresses_start_path, method: :post do |f|%>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
               <%= f.hidden_field :product_id, :value => @product.id %>
-              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @new_progress.progress_status}) %>
-              <%= f.submit '開始', class: "btn btn-success" %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <% if @progress.progress_status == "waiting" %>
+                <%= f.submit '開始', class: "btn btn-success", disabled: true %>
+              <% else %>
+                <%= f.submit '開始', class: "btn btn-success" %>
+              <%end%>
             <%end%>
           </td>
           <td>
             <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
               <%= f.hidden_field :product_id %>
-              <%= f.hidden_field :id %>
+              <%= f.hidden_field :progress_id %>
               <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
               <%= f.submit '完了', class: "btn btn-success" %>
             <%end%>

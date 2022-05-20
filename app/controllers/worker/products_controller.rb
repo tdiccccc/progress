@@ -7,7 +7,8 @@ class Worker::ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
     @new_progress = Progress.new
-    @progress = Progress.find_by(product_id: @product.id, end_time: nil)
+    @progress = Progress.find_by(product_id: @product.id)
+    #@progress = Progress.find_by(product_id: @product.id, end_time: nil)
   end
 
   private

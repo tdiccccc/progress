@@ -13960,3 +13960,3347 @@ Processing by Worker::ProductsController#index as HTML
 Completed 200 OK in 95ms (Views: 72.1ms | ActiveRecord: 3.3ms | Allocations: 30694)
 
 
+Started GET "/progresses/1" for 122.223.5.191 at 2022-05-19 12:17:41 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Worker::ProgressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorker Load (0.6ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/show.html.erb within layouts/application
+  Rendered worker/progresses/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 222)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 4.5ms | Allocations: 1371)
+  Rendered layouts/_notice.html.erb (Duration: 0.8ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 8577)
+Completed 200 OK in 69ms (Views: 38.1ms | ActiveRecord: 1.1ms | Allocations: 20186)
+
+
+Started GET "/progresses" for 122.223.5.191 at 2022-05-19 12:17:43 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#index as HTML
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering worker/progresses/index.html.erb within layouts/application
+  Rendered worker/progresses/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 383)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4165)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 5803)
+
+
+Started GET "/products" for 122.223.5.191 at 2022-05-19 12:17:45 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 39.0ms | Allocations: 14478)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.5ms | Allocations: 1265)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 49.6ms | Allocations: 19306)
+Completed 200 OK in 59ms (Views: 49.2ms | ActiveRecord: 2.5ms | Allocations: 22767)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:17:47 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (1.0ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? AND "progresses"."end_time" IS NULL LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 25.5ms | Allocations: 7019)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 7089)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.8ms | Allocations: 14646)
+
+
+  
+ActionView::Template::Error (undefined method `progress_status' for nil:NilClass):
+    48:             <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+    49:               <%= f.hidden_field :product_id %>
+    50:               <%= f.hidden_field :id %>
+    51:               <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+    52:               <%= f.submit '完了', class: "btn btn-success" %>
+    53:             <%end%>
+    54:           </td>
+  
+app/views/worker/products/show.html.erb:51
+app/views/worker/products/show.html.erb:48
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:21:18 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? AND "progresses"."end_time" IS NULL LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 8410)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 8481)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 2.4ms | Allocations: 21714)
+
+
+  
+ActionView::Template::Error (undefined method `progress_status' for nil:NilClass):
+    48:             <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+    49:               <%= f.hidden_field :product_id %>
+    50:               <%= f.hidden_field :id %>
+    51:               <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+    52:               <%= f.submit '完了', class: "btn btn-success" %>
+    53:             <%end%>
+    54:           </td>
+  
+app/views/worker/products/show.html.erb:51
+app/views/worker/products/show.html.erb:48
+Started GET "/products" for 122.223.5.191 at 2022-05-19 12:21:55 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 11.6ms | Allocations: 7914)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 15862)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 1.1ms | Allocations: 17198)
+
+
+Started GET "/" for 122.223.5.191 at 2022-05-19 12:22:36 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 3372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 306)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 7354)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.4ms | Allocations: 7699)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" ORDER BY "progresses"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."end_time" IS NULL[0m
+Started GET "/products" for 122.223.5.191 at 2022-05-19 12:25:16 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 21.3ms | Allocations: 11343)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 12.3ms | Allocations: 7910)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 23597)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 2.4ms | Allocations: 26029)
+
+
+Started GET "/" for 122.223.5.191 at 2022-05-19 12:26:17 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 3372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.0ms | Allocations: 1265)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 8297)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.5ms | Allocations: 8700)
+
+
+Started GET "/" for 122.223.5.191 at 2022-05-19 12:26:43 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Worker::ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/worker/products/index.html.erb:19
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/worker/products/index.html.erb:24
+  Rendered worker/products/index.html.erb within layouts/application (Duration: 24.8ms | Allocations: 15208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 15.0ms | Allocations: 8335)
+  Rendered layouts/_notice.html.erb (Duration: 0.4ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 30417)
+Completed 200 OK in 68ms (Views: 52.6ms | ActiveRecord: 2.2ms | Allocations: 34954)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:26:46 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 16.8ms | Allocations: 10772)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.6ms | Allocations: 1265)
+  Rendered layouts/_notice.html.erb (Duration: 0.2ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 15697)
+Completed 200 OK in 42ms (Views: 27.6ms | ActiveRecord: 1.2ms | Allocations: 23240)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:27:25 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 14.3ms | Allocations: 12898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 12.0ms | Allocations: 6953)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 23555)
+Completed 200 OK in 56ms (Views: 32.6ms | ActiveRecord: 3.0ms | Allocations: 35831)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:27:28 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 9.4ms | Allocations: 9077)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.3ms | Allocations: 1258)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 13993)
+Completed 200 OK in 24ms (Views: 19.4ms | ActiveRecord: 0.4ms | Allocations: 15511)
+
+
+Started POST "/progresses/start" for 122.223.5.191 at 2022-05-19 12:28:01 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProgressesController#start as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "progress"=>{"product_id"=>"1", "progress_status"=>"waiting"}, "commit"=>"開始"}
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/worker/progresses_controller.rb:17:in `start'
+  [1m[36mWorker Load (0.2ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/worker/progresses_controller.rb:17:in `start'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/progresses_controller.rb:17:in `start'
+  [1m[36mProgress Create (6.4ms)[0m  [1m[32mINSERT INTO "progresses" ("worker_id", "product_id", "begin_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["worker_id", 2], ["product_id", 1], ["begin_time", "2022-05-19 12:28:01.218098"], ["created_at", "2022-05-19 12:28:01.226667"], ["updated_at", "2022-05-19 12:28:01.226667"]]
+  ↳ app/controllers/worker/progresses_controller.rb:17:in `start'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/worker/progresses_controller.rb:17:in `start'
+Redirected to https://b00c2093b22845d5b0d1327184f963c8.vfs.cloud9.ap-northeast-1.amazonaws.com/products/1
+Completed 302 Found in 32ms (ActiveRecord: 10.9ms | Allocations: 9813)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:28:01 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 9.6ms | Allocations: 9084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.5ms | Allocations: 1257)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 13998)
+Completed 200 OK in 25ms (Views: 20.2ms | ActiveRecord: 0.5ms | Allocations: 15829)
+
+
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ?[0m  [["product_id", 1]]
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:33:27 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 7018)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 7089)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms | Allocations: 9508)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <% if @progress.progress_status !== "waiting" %>
+                <%= f.submit '開始', class: "btn btn-success enable" %>
+              <% else %>
+                <%= f.submit '開始', class: "btn btn-success desabled" %>
+              <% end %>
+
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id %>
+              <%= f.hidden_field :progress_id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:        <table class="table table-hover table-inverse">
+7:          <tbody>
+8:            <tr>
+9:              <td>商品ID</td>
+10:              <td><%= @product.id %></td>
+11:            </tr>
+12:            <tr>
+13:              <td>商品名</td>
+14:              <td><%= @product.genre.name%></td>
+15:            </tr>
+16:            <tr>
+17:              <td>数量</td>
+18:              <td><%= @product.product_count %></td>
+19:            </tr>
+20:            <tr>
+21:              <td>納期</td>
+22:              <td><%= @product.delivery_date %></td>
+23:            </tr>
+24:          </tbody>
+25:        </table>
+26:      </div>
+27:      <div class="row">
+28:        <h3 class="bg-light">商品を進行</h3>
+29:      </div>
+30:      <div class="row">
+31:        <table class="table table-hover table-inverse">
+32:          <tbody>
+33:            <tr>
+34:              <td>工程</td>
+35:              <td></td>
+36:              <td></td>
+37:            </tr>
+38:            <tr>
+39:              <td>受注</td>
+40:              <td>
+41:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+42:                  <%= f.hidden_field :product_id, :value => @product.id %>
+43:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+44:                  <% if @progress.progress_status !== "waiting" %>
+45:                    <%= f.submit '開始', class: "btn btn-success enable" %>
+46:                  <% else %>
+47:                    <%= f.submit '開始', class: "btn btn-success desabled" %>
+48:                  <% end %>
+49:    
+50:                <%end%>
+51:              </td>
+52:              <td>
+53:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+54:                  <%= f.hidden_field :product_id %>
+55:                  <%= f.hidden_field :progress_id %>
+56:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+57:                  <%= f.submit '完了', class: "btn btn-success" %>
+58:                <%end%>
+59:              </td>
+60:            </tr>
+61:            <tr>
+62:              <td>印刷</td>
+63:              <td>
+64:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+65:                  <%= f.hidden_field :product_id, :value => @product.id %>
+66:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+67:                  <%= f.submit '開始', class: "btn btn-success" %>
+68:                <%end%>
+69:              </td>
+70:              <td>
+71:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+72:                  <%= f.hidden_field :product_id, :value => @product.id %>
+73:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+74:                  <%= f.submit '完了', class: "btn btn-success" %>
+75:                <%end%>
+76:              </td>
+77:            </tr>
+78:            <tr>
+79:              <td>断裁</td>
+80:              <td>
+81:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+82:                  <%= f.hidden_field :product_id, :value => @product.id %>
+83:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+84:                  <%= f.submit '開始', class: "btn btn-success" %>
+85:                <%end%>
+86:              </td>
+87:              <td>
+88:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+89:                  <%= f.hidden_field :product_id, :value => @product.id %>
+90:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+91:                  <%= f.submit '完了', class: "btn btn-success" %>
+92:                <%end%>
+93:              </td>
+94:            </tr>
+95:            <tr>
+96:              <td>加工</td>
+97:              <td>
+98:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+99:                  <%= f.hidden_field :product_id, :value => @product.id %>
+100:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+101:                  <%= f.submit '開始', class: "btn btn-success" %>
+102:                <%end%>
+103:              </td>
+104:              <td>
+105:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+106:                  <%= f.hidden_field :product_id, :value => @product.id %>
+107:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+108:                  <%= f.submit '完了', class: "btn btn-success" %>
+109:                <%end%>
+110:              </td>
+111:            </tr>
+112:            <tr>
+113:              <td>発送</td>
+114:              <td>
+115:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+116:                  <%= f.hidden_field :product_id, :value => @product.id %>
+117:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+118:                  <%= f.submit '開始', class: "btn btn-success" %>
+119:                <%end%>
+120:              </td>
+121:              <td>
+122:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+123:                  <%= f.hidden_field :product_id, :value => @product.id %>
+124:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+125:                  <%= f.submit '完了', class: "btn btn-success" %>
+126:                <%end%>
+127:              </td>
+128:            </tr>
+129:          </tbody>
+130:        </table>
+131:      </div>
+132:    </div>
+  
+app/views/worker/products/show.html.erb:44: syntax error, unexpected '='
+app/views/worker/products/show.html.erb:46: else without rescue is useless
+app/views/worker/products/show.html.erb:135: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:44: syntax error, unexpected '='
+app/views/worker/products/show.html.erb:46: else without rescue is useless
+app/views/worker/products/show.html.erb:135: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:44: syntax error, unexpected '='
+app/views/worker/products/show.html.erb:46: else without rescue is useless
+app/views/worker/products/show.html.erb:135: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:44: syntax error, unexpected '='
+app/views/worker/products/show.html.erb:46: else without rescue is useless
+app/views/worker/products/show.html.erb:135: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:44: syntax error, unexpected '='
+app/views/worker/products/show.html.erb:46: else without rescue is useless
+app/views/worker/products/show.html.erb:135: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:44: syntax error, unexpected '='
+app/views/worker/products/show.html.erb:46: else without rescue is useless
+app/views/worker/products/show.html.erb:135: syntax error, unexpected end, expecting end-of-input
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:33:45 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 10.7ms | Allocations: 10308)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.1ms | Allocations: 2187)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 16795)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 0.4ms | Allocations: 19229)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:33:59 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 10295)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.7ms | Allocations: 2187)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 16781)
+Completed 200 OK in 29ms (Views: 23.6ms | ActiveRecord: 0.4ms | Allocations: 19210)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:35:58 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2156)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2227)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 4635)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <% if @progress.progress_status != "waiting" %>
+                <%= f.submit '開始', class: "btn btn-success" disabled %>
+              <% else %>
+                <%= f.submit '開始', class: "btn btn-success" %>
+              <% end %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id %>
+              <%= f.hidden_field :progress_id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:        <table class="table table-hover table-inverse">
+7:          <tbody>
+8:            <tr>
+9:              <td>商品ID</td>
+10:              <td><%= @product.id %></td>
+11:            </tr>
+12:            <tr>
+13:              <td>商品名</td>
+14:              <td><%= @product.genre.name%></td>
+15:            </tr>
+16:            <tr>
+17:              <td>数量</td>
+18:              <td><%= @product.product_count %></td>
+19:            </tr>
+20:            <tr>
+21:              <td>納期</td>
+22:              <td><%= @product.delivery_date %></td>
+23:            </tr>
+24:          </tbody>
+25:        </table>
+26:      </div>
+27:      <div class="row">
+28:        <h3 class="bg-light">商品を進行</h3>
+29:      </div>
+30:      <div class="row">
+31:        <table class="table table-hover table-inverse">
+32:          <tbody>
+33:            <tr>
+34:              <td>工程</td>
+35:              <td></td>
+36:              <td></td>
+37:            </tr>
+38:            <tr>
+39:              <td>受注</td>
+40:              <td>
+41:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+42:                  <%= f.hidden_field :product_id, :value => @product.id %>
+43:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+44:                  <% if @progress.progress_status != "waiting" %>
+45:                    <%= f.submit '開始', class: "btn btn-success" disabled %>
+46:                  <% else %>
+47:                    <%= f.submit '開始', class: "btn btn-success" %>
+48:                  <% end %>
+49:                <%end%>
+50:              </td>
+51:              <td>
+52:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+53:                  <%= f.hidden_field :product_id %>
+54:                  <%= f.hidden_field :progress_id %>
+55:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+56:                  <%= f.submit '完了', class: "btn btn-success" %>
+57:                <%end%>
+58:              </td>
+59:            </tr>
+60:            <tr>
+61:              <td>印刷</td>
+62:              <td>
+63:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+64:                  <%= f.hidden_field :product_id, :value => @product.id %>
+65:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+66:                  <%= f.submit '開始', class: "btn btn-success" %>
+67:                <%end%>
+68:              </td>
+69:              <td>
+70:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+71:                  <%= f.hidden_field :product_id, :value => @product.id %>
+72:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+73:                  <%= f.submit '完了', class: "btn btn-success" %>
+74:                <%end%>
+75:              </td>
+76:            </tr>
+77:            <tr>
+78:              <td>断裁</td>
+79:              <td>
+80:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+81:                  <%= f.hidden_field :product_id, :value => @product.id %>
+82:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+83:                  <%= f.submit '開始', class: "btn btn-success" %>
+84:                <%end%>
+85:              </td>
+86:              <td>
+87:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+88:                  <%= f.hidden_field :product_id, :value => @product.id %>
+89:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+90:                  <%= f.submit '完了', class: "btn btn-success" %>
+91:                <%end%>
+92:              </td>
+93:            </tr>
+94:            <tr>
+95:              <td>加工</td>
+96:              <td>
+97:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+98:                  <%= f.hidden_field :product_id, :value => @product.id %>
+99:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+100:                  <%= f.submit '開始', class: "btn btn-success" %>
+101:                <%end%>
+102:              </td>
+103:              <td>
+104:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+105:                  <%= f.hidden_field :product_id, :value => @product.id %>
+106:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+107:                  <%= f.submit '完了', class: "btn btn-success" %>
+108:                <%end%>
+109:              </td>
+110:            </tr>
+111:            <tr>
+112:              <td>発送</td>
+113:              <td>
+114:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+115:                  <%= f.hidden_field :product_id, :value => @product.id %>
+116:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+117:                  <%= f.submit '開始', class: "btn btn-success" %>
+118:                <%end%>
+119:              </td>
+120:              <td>
+121:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+122:                  <%= f.hidden_field :product_id, :value => @product.id %>
+123:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+124:                  <%= f.submit '完了', class: "btn btn-success" %>
+125:                <%end%>
+126:              </td>
+127:            </tr>
+128:          </tbody>
+129:        </table>
+130:      </div>
+131:    </div>
+  
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:36:34 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2156)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2227)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 4641)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <% if @progress.progress_status != "waiting" %>
+                <%= f.submit '開始', class: "btn btn-success" disabled=true %>
+              <% else %>
+                <%= f.submit '開始', class: "btn btn-success" %>
+              <% end %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id %>
+              <%= f.hidden_field :progress_id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:        <table class="table table-hover table-inverse">
+7:          <tbody>
+8:            <tr>
+9:              <td>商品ID</td>
+10:              <td><%= @product.id %></td>
+11:            </tr>
+12:            <tr>
+13:              <td>商品名</td>
+14:              <td><%= @product.genre.name%></td>
+15:            </tr>
+16:            <tr>
+17:              <td>数量</td>
+18:              <td><%= @product.product_count %></td>
+19:            </tr>
+20:            <tr>
+21:              <td>納期</td>
+22:              <td><%= @product.delivery_date %></td>
+23:            </tr>
+24:          </tbody>
+25:        </table>
+26:      </div>
+27:      <div class="row">
+28:        <h3 class="bg-light">商品を進行</h3>
+29:      </div>
+30:      <div class="row">
+31:        <table class="table table-hover table-inverse">
+32:          <tbody>
+33:            <tr>
+34:              <td>工程</td>
+35:              <td></td>
+36:              <td></td>
+37:            </tr>
+38:            <tr>
+39:              <td>受注</td>
+40:              <td>
+41:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+42:                  <%= f.hidden_field :product_id, :value => @product.id %>
+43:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+44:                  <% if @progress.progress_status != "waiting" %>
+45:                    <%= f.submit '開始', class: "btn btn-success" disabled=true %>
+46:                  <% else %>
+47:                    <%= f.submit '開始', class: "btn btn-success" %>
+48:                  <% end %>
+49:                <%end%>
+50:              </td>
+51:              <td>
+52:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+53:                  <%= f.hidden_field :product_id %>
+54:                  <%= f.hidden_field :progress_id %>
+55:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+56:                  <%= f.submit '完了', class: "btn btn-success" %>
+57:                <%end%>
+58:              </td>
+59:            </tr>
+60:            <tr>
+61:              <td>印刷</td>
+62:              <td>
+63:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+64:                  <%= f.hidden_field :product_id, :value => @product.id %>
+65:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+66:                  <%= f.submit '開始', class: "btn btn-success" %>
+67:                <%end%>
+68:              </td>
+69:              <td>
+70:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+71:                  <%= f.hidden_field :product_id, :value => @product.id %>
+72:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+73:                  <%= f.submit '完了', class: "btn btn-success" %>
+74:                <%end%>
+75:              </td>
+76:            </tr>
+77:            <tr>
+78:              <td>断裁</td>
+79:              <td>
+80:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+81:                  <%= f.hidden_field :product_id, :value => @product.id %>
+82:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+83:                  <%= f.submit '開始', class: "btn btn-success" %>
+84:                <%end%>
+85:              </td>
+86:              <td>
+87:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+88:                  <%= f.hidden_field :product_id, :value => @product.id %>
+89:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+90:                  <%= f.submit '完了', class: "btn btn-success" %>
+91:                <%end%>
+92:              </td>
+93:            </tr>
+94:            <tr>
+95:              <td>加工</td>
+96:              <td>
+97:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+98:                  <%= f.hidden_field :product_id, :value => @product.id %>
+99:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+100:                  <%= f.submit '開始', class: "btn btn-success" %>
+101:                <%end%>
+102:              </td>
+103:              <td>
+104:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+105:                  <%= f.hidden_field :product_id, :value => @product.id %>
+106:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+107:                  <%= f.submit '完了', class: "btn btn-success" %>
+108:                <%end%>
+109:              </td>
+110:            </tr>
+111:            <tr>
+112:              <td>発送</td>
+113:              <td>
+114:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+115:                  <%= f.hidden_field :product_id, :value => @product.id %>
+116:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+117:                  <%= f.submit '開始', class: "btn btn-success" %>
+118:                <%end%>
+119:              </td>
+120:              <td>
+121:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+122:                  <%= f.hidden_field :product_id, :value => @product.id %>
+123:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+124:                  <%= f.submit '完了', class: "btn btn-success" %>
+125:                <%end%>
+126:              </td>
+127:            </tr>
+128:          </tbody>
+129:        </table>
+130:      </div>
+131:    </div>
+  
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:37:58 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2156)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2227)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 4642)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <% if @progress.progress_status != "waiting" %>
+                <%= f.submit '開始', class: "btn btn-success" disabled: true %>
+              <% else %>
+                <%= f.submit '開始', class: "btn btn-success" %>
+              <% end %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id %>
+              <%= f.hidden_field :progress_id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:        <table class="table table-hover table-inverse">
+7:          <tbody>
+8:            <tr>
+9:              <td>商品ID</td>
+10:              <td><%= @product.id %></td>
+11:            </tr>
+12:            <tr>
+13:              <td>商品名</td>
+14:              <td><%= @product.genre.name%></td>
+15:            </tr>
+16:            <tr>
+17:              <td>数量</td>
+18:              <td><%= @product.product_count %></td>
+19:            </tr>
+20:            <tr>
+21:              <td>納期</td>
+22:              <td><%= @product.delivery_date %></td>
+23:            </tr>
+24:          </tbody>
+25:        </table>
+26:      </div>
+27:      <div class="row">
+28:        <h3 class="bg-light">商品を進行</h3>
+29:      </div>
+30:      <div class="row">
+31:        <table class="table table-hover table-inverse">
+32:          <tbody>
+33:            <tr>
+34:              <td>工程</td>
+35:              <td></td>
+36:              <td></td>
+37:            </tr>
+38:            <tr>
+39:              <td>受注</td>
+40:              <td>
+41:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+42:                  <%= f.hidden_field :product_id, :value => @product.id %>
+43:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+44:                  <% if @progress.progress_status != "waiting" %>
+45:                    <%= f.submit '開始', class: "btn btn-success" disabled: true %>
+46:                  <% else %>
+47:                    <%= f.submit '開始', class: "btn btn-success" %>
+48:                  <% end %>
+49:                <%end%>
+50:              </td>
+51:              <td>
+52:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+53:                  <%= f.hidden_field :product_id %>
+54:                  <%= f.hidden_field :progress_id %>
+55:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+56:                  <%= f.submit '完了', class: "btn btn-success" %>
+57:                <%end%>
+58:              </td>
+59:            </tr>
+60:            <tr>
+61:              <td>印刷</td>
+62:              <td>
+63:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+64:                  <%= f.hidden_field :product_id, :value => @product.id %>
+65:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+66:                  <%= f.submit '開始', class: "btn btn-success" %>
+67:                <%end%>
+68:              </td>
+69:              <td>
+70:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+71:                  <%= f.hidden_field :product_id, :value => @product.id %>
+72:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+73:                  <%= f.submit '完了', class: "btn btn-success" %>
+74:                <%end%>
+75:              </td>
+76:            </tr>
+77:            <tr>
+78:              <td>断裁</td>
+79:              <td>
+80:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+81:                  <%= f.hidden_field :product_id, :value => @product.id %>
+82:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+83:                  <%= f.submit '開始', class: "btn btn-success" %>
+84:                <%end%>
+85:              </td>
+86:              <td>
+87:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+88:                  <%= f.hidden_field :product_id, :value => @product.id %>
+89:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+90:                  <%= f.submit '完了', class: "btn btn-success" %>
+91:                <%end%>
+92:              </td>
+93:            </tr>
+94:            <tr>
+95:              <td>加工</td>
+96:              <td>
+97:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+98:                  <%= f.hidden_field :product_id, :value => @product.id %>
+99:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+100:                  <%= f.submit '開始', class: "btn btn-success" %>
+101:                <%end%>
+102:              </td>
+103:              <td>
+104:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+105:                  <%= f.hidden_field :product_id, :value => @product.id %>
+106:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+107:                  <%= f.submit '完了', class: "btn btn-success" %>
+108:                <%end%>
+109:              </td>
+110:            </tr>
+111:            <tr>
+112:              <td>発送</td>
+113:              <td>
+114:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+115:                  <%= f.hidden_field :product_id, :value => @product.id %>
+116:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+117:                  <%= f.submit '開始', class: "btn btn-success" %>
+118:                <%end%>
+119:              </td>
+120:              <td>
+121:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+122:                  <%= f.hidden_field :product_id, :value => @product.id %>
+123:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+124:                  <%= f.submit '完了', class: "btn btn-success" %>
+125:                <%end%>
+126:              </td>
+127:            </tr>
+128:          </tbody>
+129:        </table>
+130:      </div>
+131:    </div>
+  
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:38:41 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2109)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2180)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 4594)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" disabled: true %>
+
+              <% end %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id %>
+              <%= f.hidden_field :progress_id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:        <table class="table table-hover table-inverse">
+7:          <tbody>
+8:            <tr>
+9:              <td>商品ID</td>
+10:              <td><%= @product.id %></td>
+11:            </tr>
+12:            <tr>
+13:              <td>商品名</td>
+14:              <td><%= @product.genre.name%></td>
+15:            </tr>
+16:            <tr>
+17:              <td>数量</td>
+18:              <td><%= @product.product_count %></td>
+19:            </tr>
+20:            <tr>
+21:              <td>納期</td>
+22:              <td><%= @product.delivery_date %></td>
+23:            </tr>
+24:          </tbody>
+25:        </table>
+26:      </div>
+27:      <div class="row">
+28:        <h3 class="bg-light">商品を進行</h3>
+29:      </div>
+30:      <div class="row">
+31:        <table class="table table-hover table-inverse">
+32:          <tbody>
+33:            <tr>
+34:              <td>工程</td>
+35:              <td></td>
+36:              <td></td>
+37:            </tr>
+38:            <tr>
+39:              <td>受注</td>
+40:              <td>
+41:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+42:                  <%= f.hidden_field :product_id, :value => @product.id %>
+43:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+44:                  <%= f.submit '開始', class: "btn btn-success" disabled: true %>
+45:    
+46:                  <% end %>
+47:                <%end%>
+48:              </td>
+49:              <td>
+50:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+51:                  <%= f.hidden_field :product_id %>
+52:                  <%= f.hidden_field :progress_id %>
+53:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+54:                  <%= f.submit '完了', class: "btn btn-success" %>
+55:                <%end%>
+56:              </td>
+57:            </tr>
+58:            <tr>
+59:              <td>印刷</td>
+60:              <td>
+61:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+62:                  <%= f.hidden_field :product_id, :value => @product.id %>
+63:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+64:                  <%= f.submit '開始', class: "btn btn-success" %>
+65:                <%end%>
+66:              </td>
+67:              <td>
+68:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+69:                  <%= f.hidden_field :product_id, :value => @product.id %>
+70:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+71:                  <%= f.submit '完了', class: "btn btn-success" %>
+72:                <%end%>
+73:              </td>
+74:            </tr>
+75:            <tr>
+76:              <td>断裁</td>
+77:              <td>
+78:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+79:                  <%= f.hidden_field :product_id, :value => @product.id %>
+80:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+81:                  <%= f.submit '開始', class: "btn btn-success" %>
+82:                <%end%>
+83:              </td>
+84:              <td>
+85:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+86:                  <%= f.hidden_field :product_id, :value => @product.id %>
+87:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+88:                  <%= f.submit '完了', class: "btn btn-success" %>
+89:                <%end%>
+90:              </td>
+91:            </tr>
+92:            <tr>
+93:              <td>加工</td>
+94:              <td>
+95:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+96:                  <%= f.hidden_field :product_id, :value => @product.id %>
+97:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+98:                  <%= f.submit '開始', class: "btn btn-success" %>
+99:                <%end%>
+100:              </td>
+101:              <td>
+102:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+103:                  <%= f.hidden_field :product_id, :value => @product.id %>
+104:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+105:                  <%= f.submit '完了', class: "btn btn-success" %>
+106:                <%end%>
+107:              </td>
+108:            </tr>
+109:            <tr>
+110:              <td>発送</td>
+111:              <td>
+112:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+113:                  <%= f.hidden_field :product_id, :value => @product.id %>
+114:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+115:                  <%= f.submit '開始', class: "btn btn-success" %>
+116:                <%end%>
+117:              </td>
+118:              <td>
+119:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+120:                  <%= f.hidden_field :product_id, :value => @product.id %>
+121:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+122:                  <%= f.submit '完了', class: "btn btn-success" %>
+123:                <%end%>
+124:              </td>
+125:            </tr>
+126:          </tbody>
+127:        </table>
+128:      </div>
+129:    </div>
+  
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:39:37 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2109)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2180)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 4594)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success", disabled: true %>
+
+              <% end %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id %>
+              <%= f.hidden_field :progress_id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:        <table class="table table-hover table-inverse">
+7:          <tbody>
+8:            <tr>
+9:              <td>商品ID</td>
+10:              <td><%= @product.id %></td>
+11:            </tr>
+12:            <tr>
+13:              <td>商品名</td>
+14:              <td><%= @product.genre.name%></td>
+15:            </tr>
+16:            <tr>
+17:              <td>数量</td>
+18:              <td><%= @product.product_count %></td>
+19:            </tr>
+20:            <tr>
+21:              <td>納期</td>
+22:              <td><%= @product.delivery_date %></td>
+23:            </tr>
+24:          </tbody>
+25:        </table>
+26:      </div>
+27:      <div class="row">
+28:        <h3 class="bg-light">商品を進行</h3>
+29:      </div>
+30:      <div class="row">
+31:        <table class="table table-hover table-inverse">
+32:          <tbody>
+33:            <tr>
+34:              <td>工程</td>
+35:              <td></td>
+36:              <td></td>
+37:            </tr>
+38:            <tr>
+39:              <td>受注</td>
+40:              <td>
+41:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+42:                  <%= f.hidden_field :product_id, :value => @product.id %>
+43:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+44:                  <%= f.submit '開始', class: "btn btn-success", disabled: true %>
+45:    
+46:                  <% end %>
+47:                <%end%>
+48:              </td>
+49:              <td>
+50:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+51:                  <%= f.hidden_field :product_id %>
+52:                  <%= f.hidden_field :progress_id %>
+53:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+54:                  <%= f.submit '完了', class: "btn btn-success" %>
+55:                <%end%>
+56:              </td>
+57:            </tr>
+58:            <tr>
+59:              <td>印刷</td>
+60:              <td>
+61:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+62:                  <%= f.hidden_field :product_id, :value => @product.id %>
+63:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+64:                  <%= f.submit '開始', class: "btn btn-success" %>
+65:                <%end%>
+66:              </td>
+67:              <td>
+68:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+69:                  <%= f.hidden_field :product_id, :value => @product.id %>
+70:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+71:                  <%= f.submit '完了', class: "btn btn-success" %>
+72:                <%end%>
+73:              </td>
+74:            </tr>
+75:            <tr>
+76:              <td>断裁</td>
+77:              <td>
+78:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+79:                  <%= f.hidden_field :product_id, :value => @product.id %>
+80:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+81:                  <%= f.submit '開始', class: "btn btn-success" %>
+82:                <%end%>
+83:              </td>
+84:              <td>
+85:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+86:                  <%= f.hidden_field :product_id, :value => @product.id %>
+87:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+88:                  <%= f.submit '完了', class: "btn btn-success" %>
+89:                <%end%>
+90:              </td>
+91:            </tr>
+92:            <tr>
+93:              <td>加工</td>
+94:              <td>
+95:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+96:                  <%= f.hidden_field :product_id, :value => @product.id %>
+97:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+98:                  <%= f.submit '開始', class: "btn btn-success" %>
+99:                <%end%>
+100:              </td>
+101:              <td>
+102:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+103:                  <%= f.hidden_field :product_id, :value => @product.id %>
+104:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+105:                  <%= f.submit '完了', class: "btn btn-success" %>
+106:                <%end%>
+107:              </td>
+108:            </tr>
+109:            <tr>
+110:              <td>発送</td>
+111:              <td>
+112:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+113:                  <%= f.hidden_field :product_id, :value => @product.id %>
+114:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+115:                  <%= f.submit '開始', class: "btn btn-success" %>
+116:                <%end%>
+117:              </td>
+118:              <td>
+119:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+120:                  <%= f.hidden_field :product_id, :value => @product.id %>
+121:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+122:                  <%= f.submit '完了', class: "btn btn-success" %>
+123:                <%end%>
+124:              </td>
+125:            </tr>
+126:          </tbody>
+127:        </table>
+128:      </div>
+129:    </div>
+  
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:40:00 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2109)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2180)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms | Allocations: 4594)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+
+              <% end %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id %>
+              <%= f.hidden_field :progress_id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:        <table class="table table-hover table-inverse">
+7:          <tbody>
+8:            <tr>
+9:              <td>商品ID</td>
+10:              <td><%= @product.id %></td>
+11:            </tr>
+12:            <tr>
+13:              <td>商品名</td>
+14:              <td><%= @product.genre.name%></td>
+15:            </tr>
+16:            <tr>
+17:              <td>数量</td>
+18:              <td><%= @product.product_count %></td>
+19:            </tr>
+20:            <tr>
+21:              <td>納期</td>
+22:              <td><%= @product.delivery_date %></td>
+23:            </tr>
+24:          </tbody>
+25:        </table>
+26:      </div>
+27:      <div class="row">
+28:        <h3 class="bg-light">商品を進行</h3>
+29:      </div>
+30:      <div class="row">
+31:        <table class="table table-hover table-inverse">
+32:          <tbody>
+33:            <tr>
+34:              <td>工程</td>
+35:              <td></td>
+36:              <td></td>
+37:            </tr>
+38:            <tr>
+39:              <td>受注</td>
+40:              <td>
+41:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+42:                  <%= f.hidden_field :product_id, :value => @product.id %>
+43:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+44:                  <%= f.submit '開始', class: "btn btn-success" %>
+45:    
+46:                  <% end %>
+47:                <%end%>
+48:              </td>
+49:              <td>
+50:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+51:                  <%= f.hidden_field :product_id %>
+52:                  <%= f.hidden_field :progress_id %>
+53:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+54:                  <%= f.submit '完了', class: "btn btn-success" %>
+55:                <%end%>
+56:              </td>
+57:            </tr>
+58:            <tr>
+59:              <td>印刷</td>
+60:              <td>
+61:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+62:                  <%= f.hidden_field :product_id, :value => @product.id %>
+63:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+64:                  <%= f.submit '開始', class: "btn btn-success" %>
+65:                <%end%>
+66:              </td>
+67:              <td>
+68:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+69:                  <%= f.hidden_field :product_id, :value => @product.id %>
+70:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+71:                  <%= f.submit '完了', class: "btn btn-success" %>
+72:                <%end%>
+73:              </td>
+74:            </tr>
+75:            <tr>
+76:              <td>断裁</td>
+77:              <td>
+78:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+79:                  <%= f.hidden_field :product_id, :value => @product.id %>
+80:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+81:                  <%= f.submit '開始', class: "btn btn-success" %>
+82:                <%end%>
+83:              </td>
+84:              <td>
+85:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+86:                  <%= f.hidden_field :product_id, :value => @product.id %>
+87:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+88:                  <%= f.submit '完了', class: "btn btn-success" %>
+89:                <%end%>
+90:              </td>
+91:            </tr>
+92:            <tr>
+93:              <td>加工</td>
+94:              <td>
+95:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+96:                  <%= f.hidden_field :product_id, :value => @product.id %>
+97:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+98:                  <%= f.submit '開始', class: "btn btn-success" %>
+99:                <%end%>
+100:              </td>
+101:              <td>
+102:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+103:                  <%= f.hidden_field :product_id, :value => @product.id %>
+104:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+105:                  <%= f.submit '完了', class: "btn btn-success" %>
+106:                <%end%>
+107:              </td>
+108:            </tr>
+109:            <tr>
+110:              <td>発送</td>
+111:              <td>
+112:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+113:                  <%= f.hidden_field :product_id, :value => @product.id %>
+114:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+115:                  <%= f.submit '開始', class: "btn btn-success" %>
+116:                <%end%>
+117:              </td>
+118:              <td>
+119:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+120:                  <%= f.hidden_field :product_id, :value => @product.id %>
+121:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+122:                  <%= f.submit '完了', class: "btn btn-success" %>
+123:                <%end%>
+124:              </td>
+125:            </tr>
+126:          </tbody>
+127:        </table>
+128:      </div>
+129:    </div>
+  
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+app/views/worker/products/show.html.erb:132: syntax error, unexpected end, expecting end-of-input
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:40:43 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2099)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2170)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 4584)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" disabled: true %>
+
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id %>
+              <%= f.hidden_field :progress_id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:        <table class="table table-hover table-inverse">
+7:          <tbody>
+8:            <tr>
+9:              <td>商品ID</td>
+10:              <td><%= @product.id %></td>
+11:            </tr>
+12:            <tr>
+13:              <td>商品名</td>
+14:              <td><%= @product.genre.name%></td>
+15:            </tr>
+16:            <tr>
+17:              <td>数量</td>
+18:              <td><%= @product.product_count %></td>
+19:            </tr>
+20:            <tr>
+21:              <td>納期</td>
+22:              <td><%= @product.delivery_date %></td>
+23:            </tr>
+24:          </tbody>
+25:        </table>
+26:      </div>
+27:      <div class="row">
+28:        <h3 class="bg-light">商品を進行</h3>
+29:      </div>
+30:      <div class="row">
+31:        <table class="table table-hover table-inverse">
+32:          <tbody>
+33:            <tr>
+34:              <td>工程</td>
+35:              <td></td>
+36:              <td></td>
+37:            </tr>
+38:            <tr>
+39:              <td>受注</td>
+40:              <td>
+41:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+42:                  <%= f.hidden_field :product_id, :value => @product.id %>
+43:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+44:                  <%= f.submit '開始', class: "btn btn-success" disabled: true %>
+45:    
+46:                <%end%>
+47:              </td>
+48:              <td>
+49:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+50:                  <%= f.hidden_field :product_id %>
+51:                  <%= f.hidden_field :progress_id %>
+52:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+53:                  <%= f.submit '完了', class: "btn btn-success" %>
+54:                <%end%>
+55:              </td>
+56:            </tr>
+57:            <tr>
+58:              <td>印刷</td>
+59:              <td>
+60:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+61:                  <%= f.hidden_field :product_id, :value => @product.id %>
+62:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+63:                  <%= f.submit '開始', class: "btn btn-success" %>
+64:                <%end%>
+65:              </td>
+66:              <td>
+67:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+68:                  <%= f.hidden_field :product_id, :value => @product.id %>
+69:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+70:                  <%= f.submit '完了', class: "btn btn-success" %>
+71:                <%end%>
+72:              </td>
+73:            </tr>
+74:            <tr>
+75:              <td>断裁</td>
+76:              <td>
+77:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+78:                  <%= f.hidden_field :product_id, :value => @product.id %>
+79:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+80:                  <%= f.submit '開始', class: "btn btn-success" %>
+81:                <%end%>
+82:              </td>
+83:              <td>
+84:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+85:                  <%= f.hidden_field :product_id, :value => @product.id %>
+86:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+87:                  <%= f.submit '完了', class: "btn btn-success" %>
+88:                <%end%>
+89:              </td>
+90:            </tr>
+91:            <tr>
+92:              <td>加工</td>
+93:              <td>
+94:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+95:                  <%= f.hidden_field :product_id, :value => @product.id %>
+96:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+97:                  <%= f.submit '開始', class: "btn btn-success" %>
+98:                <%end%>
+99:              </td>
+100:              <td>
+101:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+102:                  <%= f.hidden_field :product_id, :value => @product.id %>
+103:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+104:                  <%= f.submit '完了', class: "btn btn-success" %>
+105:                <%end%>
+106:              </td>
+107:            </tr>
+108:            <tr>
+109:              <td>発送</td>
+110:              <td>
+111:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+112:                  <%= f.hidden_field :product_id, :value => @product.id %>
+113:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+114:                  <%= f.submit '開始', class: "btn btn-success" %>
+115:                <%end%>
+116:              </td>
+117:              <td>
+118:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+119:                  <%= f.hidden_field :product_id, :value => @product.id %>
+120:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+121:                  <%= f.submit '完了', class: "btn btn-success" %>
+122:                <%end%>
+123:              </td>
+124:            </tr>
+125:          </tbody>
+126:        </table>
+127:      </div>
+128:    </div>
+  
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:41:31 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 10.8ms | Allocations: 10244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.3ms | Allocations: 2187)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 16732)
+Completed 200 OK in 29ms (Views: 23.7ms | ActiveRecord: 0.4ms | Allocations: 19166)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:42:19 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2096)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2167)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 4575)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" disabled: true %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id %>
+              <%= f.hidden_field :progress_id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:        <table class="table table-hover table-inverse">
+7:          <tbody>
+8:            <tr>
+9:              <td>商品ID</td>
+10:              <td><%= @product.id %></td>
+11:            </tr>
+12:            <tr>
+13:              <td>商品名</td>
+14:              <td><%= @product.genre.name%></td>
+15:            </tr>
+16:            <tr>
+17:              <td>数量</td>
+18:              <td><%= @product.product_count %></td>
+19:            </tr>
+20:            <tr>
+21:              <td>納期</td>
+22:              <td><%= @product.delivery_date %></td>
+23:            </tr>
+24:          </tbody>
+25:        </table>
+26:      </div>
+27:      <div class="row">
+28:        <h3 class="bg-light">商品を進行</h3>
+29:      </div>
+30:      <div class="row">
+31:        <table class="table table-hover table-inverse">
+32:          <tbody>
+33:            <tr>
+34:              <td>工程</td>
+35:              <td></td>
+36:              <td></td>
+37:            </tr>
+38:            <tr>
+39:              <td>受注</td>
+40:              <td>
+41:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+42:                  <%= f.hidden_field :product_id, :value => @product.id %>
+43:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+44:                  <%= f.submit '開始', class: "btn btn-success" disabled: true %>
+45:                <%end%>
+46:              </td>
+47:              <td>
+48:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+49:                  <%= f.hidden_field :product_id %>
+50:                  <%= f.hidden_field :progress_id %>
+51:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+52:                  <%= f.submit '完了', class: "btn btn-success" %>
+53:                <%end%>
+54:              </td>
+55:            </tr>
+56:            <tr>
+57:              <td>印刷</td>
+58:              <td>
+59:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+60:                  <%= f.hidden_field :product_id, :value => @product.id %>
+61:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+62:                  <%= f.submit '開始', class: "btn btn-success" %>
+63:                <%end%>
+64:              </td>
+65:              <td>
+66:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+67:                  <%= f.hidden_field :product_id, :value => @product.id %>
+68:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+69:                  <%= f.submit '完了', class: "btn btn-success" %>
+70:                <%end%>
+71:              </td>
+72:            </tr>
+73:            <tr>
+74:              <td>断裁</td>
+75:              <td>
+76:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+77:                  <%= f.hidden_field :product_id, :value => @product.id %>
+78:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+79:                  <%= f.submit '開始', class: "btn btn-success" %>
+80:                <%end%>
+81:              </td>
+82:              <td>
+83:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+84:                  <%= f.hidden_field :product_id, :value => @product.id %>
+85:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+86:                  <%= f.submit '完了', class: "btn btn-success" %>
+87:                <%end%>
+88:              </td>
+89:            </tr>
+90:            <tr>
+91:              <td>加工</td>
+92:              <td>
+93:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+94:                  <%= f.hidden_field :product_id, :value => @product.id %>
+95:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+96:                  <%= f.submit '開始', class: "btn btn-success" %>
+97:                <%end%>
+98:              </td>
+99:              <td>
+100:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+101:                  <%= f.hidden_field :product_id, :value => @product.id %>
+102:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+103:                  <%= f.submit '完了', class: "btn btn-success" %>
+104:                <%end%>
+105:              </td>
+106:            </tr>
+107:            <tr>
+108:              <td>発送</td>
+109:              <td>
+110:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+111:                  <%= f.hidden_field :product_id, :value => @product.id %>
+112:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+113:                  <%= f.submit '開始', class: "btn btn-success" %>
+114:                <%end%>
+115:              </td>
+116:              <td>
+117:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+118:                  <%= f.hidden_field :product_id, :value => @product.id %>
+119:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+120:                  <%= f.submit '完了', class: "btn btn-success" %>
+121:                <%end%>
+122:              </td>
+123:            </tr>
+124:          </tbody>
+125:        </table>
+126:      </div>
+127:    </div>
+  
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:43:14 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 22.4ms | Allocations: 10246)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.2ms | Allocations: 2187)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 16739)
+Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 0.5ms | Allocations: 19174)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:44:09 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2156)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2227)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 4642)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5 mb-5">
+  <div class="row">
+    <h3 class="bg-light">商品詳細</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>商品ID</td>
+          <td><%= @product.id %></td>
+        </tr>
+        <tr>
+          <td>商品名</td>
+          <td><%= @product.genre.name%></td>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><%= @product.product_count %></td>
+        </tr>
+        <tr>
+          <td>納期</td>
+          <td><%= @product.delivery_date %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3 class="bg-light">商品を進行</h3>
+  </div>
+  <div class="row">
+    <table class="table table-hover table-inverse">
+      <tbody>
+        <tr>
+          <td>工程</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>受注</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <% if @progress.progress_status == "waiting" %>
+                <%= f.submit '開始', class: "btn btn-success" disabled: true %>
+              <% else %>
+                <%= f.submit '開始', class: "btn btn-success" %>
+              <%end%>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id %>
+              <%= f.hidden_field :progress_id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>断裁</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>加工</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <td>発送</td>
+          <td>
+            <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '開始', class: "btn btn-success" %>
+            <%end%>
+          </td>
+          <td>
+            <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+              <%= f.hidden_field :product_id, :value => @product.id %>
+              <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+              <%= f.submit '完了', class: "btn btn-success" %>
+            <%end%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container mt-5 mb-5">
+2:      <div class="row">
+3:        <h3 class="bg-light">商品詳細</h3>
+4:      </div>
+5:      <div class="row">
+6:        <table class="table table-hover table-inverse">
+7:          <tbody>
+8:            <tr>
+9:              <td>商品ID</td>
+10:              <td><%= @product.id %></td>
+11:            </tr>
+12:            <tr>
+13:              <td>商品名</td>
+14:              <td><%= @product.genre.name%></td>
+15:            </tr>
+16:            <tr>
+17:              <td>数量</td>
+18:              <td><%= @product.product_count %></td>
+19:            </tr>
+20:            <tr>
+21:              <td>納期</td>
+22:              <td><%= @product.delivery_date %></td>
+23:            </tr>
+24:          </tbody>
+25:        </table>
+26:      </div>
+27:      <div class="row">
+28:        <h3 class="bg-light">商品を進行</h3>
+29:      </div>
+30:      <div class="row">
+31:        <table class="table table-hover table-inverse">
+32:          <tbody>
+33:            <tr>
+34:              <td>工程</td>
+35:              <td></td>
+36:              <td></td>
+37:            </tr>
+38:            <tr>
+39:              <td>受注</td>
+40:              <td>
+41:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+42:                  <%= f.hidden_field :product_id, :value => @product.id %>
+43:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+44:                  <% if @progress.progress_status == "waiting" %>
+45:                    <%= f.submit '開始', class: "btn btn-success" disabled: true %>
+46:                  <% else %>
+47:                    <%= f.submit '開始', class: "btn btn-success" %>
+48:                  <%end%>
+49:                <%end%>
+50:              </td>
+51:              <td>
+52:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+53:                  <%= f.hidden_field :product_id %>
+54:                  <%= f.hidden_field :progress_id %>
+55:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+56:                  <%= f.submit '完了', class: "btn btn-success" %>
+57:                <%end%>
+58:              </td>
+59:            </tr>
+60:            <tr>
+61:              <td>印刷</td>
+62:              <td>
+63:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+64:                  <%= f.hidden_field :product_id, :value => @product.id %>
+65:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+66:                  <%= f.submit '開始', class: "btn btn-success" %>
+67:                <%end%>
+68:              </td>
+69:              <td>
+70:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+71:                  <%= f.hidden_field :product_id, :value => @product.id %>
+72:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+73:                  <%= f.submit '完了', class: "btn btn-success" %>
+74:                <%end%>
+75:              </td>
+76:            </tr>
+77:            <tr>
+78:              <td>断裁</td>
+79:              <td>
+80:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+81:                  <%= f.hidden_field :product_id, :value => @product.id %>
+82:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+83:                  <%= f.submit '開始', class: "btn btn-success" %>
+84:                <%end%>
+85:              </td>
+86:              <td>
+87:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+88:                  <%= f.hidden_field :product_id, :value => @product.id %>
+89:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+90:                  <%= f.submit '完了', class: "btn btn-success" %>
+91:                <%end%>
+92:              </td>
+93:            </tr>
+94:            <tr>
+95:              <td>加工</td>
+96:              <td>
+97:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+98:                  <%= f.hidden_field :product_id, :value => @product.id %>
+99:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+100:                  <%= f.submit '開始', class: "btn btn-success" %>
+101:                <%end%>
+102:              </td>
+103:              <td>
+104:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+105:                  <%= f.hidden_field :product_id, :value => @product.id %>
+106:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+107:                  <%= f.submit '完了', class: "btn btn-success" %>
+108:                <%end%>
+109:              </td>
+110:            </tr>
+111:            <tr>
+112:              <td>発送</td>
+113:              <td>
+114:                <%= form_with model: @progress, url: progresses_start_path, method: :post do |f|%>
+115:                  <%= f.hidden_field :product_id, :value => @product.id %>
+116:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+117:                  <%= f.submit '開始', class: "btn btn-success" %>
+118:                <%end%>
+119:              </td>
+120:              <td>
+121:                <%= form_with model: @progress, url: progresses_finish_path, method: :post do |f|%>
+122:                  <%= f.hidden_field :product_id, :value => @product.id %>
+123:                  <%= f.select(:progress_status, Progress.progress_statuses_i18n.invert, {selected: @progress.progress_status}) %>
+124:                  <%= f.submit '完了', class: "btn btn-success" %>
+125:                <%end%>
+126:              </td>
+127:            </tr>
+128:          </tbody>
+129:        </table>
+130:      </div>
+131:    </div>
+  
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/worker/products/show.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:44:48 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 10309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 4.3ms | Allocations: 2187)
+  Rendered layouts/_notice.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 16796)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.4ms | Allocations: 19230)
+
+
+Started GET "/products/1" for 122.223.5.191 at 2022-05-19 12:44:51 +0000
+Cannot render console from 122.223.5.191! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Worker::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:8:in `show'
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."product_id" = ? LIMIT ?[0m  [["product_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/worker/products_controller.rb:10:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering worker/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/worker/products/show.html.erb:14
+  Rendered worker/products/show.html.erb within layouts/application (Duration: 9.2ms | Allocations: 9096)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mWorker Load (0.1ms)[0m  [1m[34mSELECT "workers".* FROM "workers" WHERE "workers"."id" = ? ORDER BY "workers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:35
+  Rendered layouts/_header.html.erb (Duration: 3.1ms | Allocations: 1265)
+  Rendered layouts/_notice.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 14019)
+Completed 200 OK in 23ms (Views: 18.9ms | ActiveRecord: 0.4ms | Allocations: 15522)
+
+
